@@ -33,6 +33,7 @@
 			<Component Subtype="Motor" Count="2000" />
 			<Component Subtype="LargeTube" Count="1000" />
 			<Component Subtype="CompositeArmor" Count="1000" />
+			<Component Subtype="Computer" Count="1200" />
 			<Component Subtype="QuantumComputer" Count="150" />
 			<Component Subtype="AdvancedComputer" Count="1200" />
 			<Component Subtype="IronPlate" Count="3000" />

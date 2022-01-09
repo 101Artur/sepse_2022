@@ -33,6 +33,7 @@
 			<Component Subtype="LargeTube" Count="1500" />
 			<Component Subtype="CompositeArmor" Count="450" />
 			<Component Subtype="LaserEmitter" Count="200" />
+			<Component Subtype="Computer" Count="1000" />
 			<Component Subtype="QuantumComputer" Count="150" />
 			<Component Subtype="AdvancedComputer" Count="1000" />
 			<Component Subtype="IronPlate" Count="4900" />

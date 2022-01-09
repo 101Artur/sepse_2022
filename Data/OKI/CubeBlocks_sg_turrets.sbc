@@ -100,6 +100,7 @@
 				<Component Subtype="Motor" Count="200" />
 				<Component Subtype="ArmoredPlate" Count="120" />
 				<Component Subtype="Detector" Count="15" />
+				<Component Subtype="Computer" Count="150" />
 				<Component Subtype="AdvancedComputer" Count="150" />
 				<Component Subtype="IronPlate" Count="50" />
 				<Component Subtype="SteelPlate" Count="300" />

@@ -25,6 +25,7 @@
 				<Component Subtype="Motor" Count="120" />
 				<Component Subtype="ArmoredPlate" Count="100" />
 				<Component Subtype="MetalGrid" Count="70" />
+				<Component Subtype="Computer" Count="40" />
 				<Component Subtype="AdvancedComputer" Count="40" />
 				<Component Subtype="IronPlate" Count="30" />
 				<Component Subtype="SteelPlate" Count="500" />
@@ -77,6 +78,7 @@
 				<Component Subtype="Motor" Count="180" />
 				<Component Subtype="CompositeArmor" Count="100" />
 				<Component Subtype="MetalGrid" Count="80" />
+				<Component Subtype="Computer" Count="100" />
 				<Component Subtype="AdvancedComputer" Count="100" />
 				<Component Subtype="IronPlate" Count="100" />
 				<Component Subtype="SteelPlate" Count="700" />
@@ -135,6 +137,7 @@
 				<Component Subtype="Superconductor" Count="200" />
 				<Component Subtype="Cryocooler" Count="200" />
 				<Component Subtype="Electromagnet" Count="400" />
+				<Component Subtype="Computer" Count="100" />
 				<Component Subtype="AdvancedComputer" Count="100" />
 				<Component Subtype="IronPlate" Count="250" />
 				<Component Subtype="SteelPlate" Count="600" />
@@ -186,6 +189,7 @@
 				<Component Subtype="LargeTube" Count="300" />
 				<Component Subtype="Motor" Count="300" />
 				<Component Subtype="CompositeArmor" Count="150" />
+				<Component Subtype="Computer" Count="200" />
 				<Component Subtype="AdvancedComputer" Count="200" />
 				<Component Subtype="IronPlate" Count="800" />
 				<Component Subtype="SteelPlate" Count="1000" />

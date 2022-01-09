@@ -33,6 +33,7 @@
 			<Component Subtype="LargeTube" Count="150" />
 			<Component Subtype="ArmoredPlate" Count="800" />
 			<Component Subtype="Detector" Count="50" />
+			<Component Subtype="Computer" Count="120" />
 			<Component Subtype="AdvancedComputer" Count="120" />
 			<Component Subtype="IronPlate" Count="900" />
 			<Component Subtype="SteelPlate" Count="200" />

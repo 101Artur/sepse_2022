@@ -21,14 +21,15 @@
       <UseModelIntersection>true</UseModelIntersection>
       <Components>
 		    <Component Subtype="SteelPlate" Count="1000" />
-			<Component Subtype="Construction" Count="4000" />
-			<Component Subtype="Motor" Count="800" />
-			<Component Subtype="LargeTube" Count="400" />
-			<Component Subtype="CompositeArmor" Count="100" />
-			<Component Subtype="Superconductor" Count="250" />
-			<Component Subtype="AdvancedComputer" Count="600" />
-			<Component Subtype="IronPlate" Count="400" />
-			<Component Subtype="SteelPlate" Count="900" />
+			  <Component Subtype="Construction" Count="4000" />
+        <Component Subtype="Motor" Count="800" />
+        <Component Subtype="LargeTube" Count="400" />
+        <Component Subtype="CompositeArmor" Count="100" />
+        <Component Subtype="Superconductor" Count="250" />
+        <Component Subtype="Computer" Count="600" />
+        <Component Subtype="AdvancedComputer" Count="600" />
+        <Component Subtype="IronPlate" Count="400" />
+        <Component Subtype="SteelPlate" Count="900" />
 		  </Components>
 		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
       <MountPoints>

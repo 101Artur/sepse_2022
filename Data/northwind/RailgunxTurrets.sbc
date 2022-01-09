@@ -50,7 +50,8 @@
 			<Component Subtype="Superconductor" Count="50" />
 			<Component Subtype="Electromagnet" Count="150" />
 			<Component Subtype="Cryocooler" Count="100" />
-			<Component Subtype="Detector" Count="50" />			
+			<Component Subtype="Detector" Count="50" />
+			<Component Subtype="Computer" Count="100" />		
 			<Component Subtype="AdvancedComputer" Count="100" />
 			<Component Subtype="IronPlate" Count="225" />
 			<Component Subtype="SteelPlate" Count="1000" />
@@ -122,7 +123,8 @@
 			<Component Subtype="Superconductor" Count="200" />
 			<Component Subtype="Electromagnet" Count="300" />
 			<Component Subtype="Cryocooler" Count="200" />
-			<Component Subtype="LaserEmitter" Count="100" />			
+			<Component Subtype="LaserEmitter" Count="100" />
+			<Component Subtype="Computer" Count="200" />	
 			<Component Subtype="AdvancedComputer" Count="200" />
 			<Component Subtype="IronPlate" Count="550" />
 			<Component Subtype="SteelPlate" Count="2000" />
@@ -195,6 +197,7 @@
 			<Component Subtype="Superconductor" Count="400" />
 			<Component Subtype="Electromagnet" Count="600" />
 			<Component Subtype="Cryocooler" Count="400" />
+			<Component Subtype="Computer" Count="400" />
 			<Component Subtype="QuantumComputer" Count="100" />
 			<Component Subtype="LaserEmitter" Count="100" />			
 			<Component Subtype="AdvancedComputer" Count="400" />

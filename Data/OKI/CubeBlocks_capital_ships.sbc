@@ -25,7 +25,8 @@
 				<Component Subtype="LargeTube" Count="275" />
 				<Component Subtype="Motor" Count="1200" />
 				<Component Subtype="ArmoredPlate" Count="600" />
-				<Component Subtype="Detector" Count="50" />				
+				<Component Subtype="Detector" Count="50" />
+				<Component Subtype="Computer" Count="400" />			
 				<Component Subtype="AdvancedComputer" Count="400" />
 				<Component Subtype="IronPlate" Count="1000" />				
 				<Component Subtype="SteelPlate" Count="1500" />
@@ -97,7 +98,8 @@
 				<Component Subtype="LargeTube" Count="300" />
 				<Component Subtype="Motor" Count="600" />
 				<Component Subtype="CompositeArmor" Count="800" />
-				<Component Subtype="LaserEmitter" Count="100" />				
+				<Component Subtype="LaserEmitter" Count="100" />
+				<Component Subtype="Computer" Count="400" />				
 				<Component Subtype="AdvancedComputer" Count="400" />
 				<Component Subtype="IronPlate" Count="800" />				
 				<Component Subtype="SteelPlate" Count="3000" />
@@ -169,7 +171,8 @@
 				<Component Subtype="LargeTube" Count="1500" />
 				<Component Subtype="Motor" Count="2000" />
 				<Component Subtype="ArmoredPlate" Count="1500" />
-				<Component Subtype="Detector" Count="200" />				
+				<Component Subtype="Detector" Count="200" />
+				<Component Subtype="Computer" Count="800" />				
 				<Component Subtype="AdvancedComputer" Count="800" />
 				<Component Subtype="IronPlate" Count="1200" />				
 				<Component Subtype="SteelPlate" Count="15000" />
@@ -243,7 +246,8 @@
 				<Component Subtype="LargeTube" Count="500" />
 				<Component Subtype="Motor" Count="1000" />
 				<Component Subtype="CompositeArmor" Count="1200" />
-				<Component Subtype="LaserEmitter" Count="150" />				
+				<Component Subtype="LaserEmitter" Count="150" />
+				<Component Subtype="Computer" Count="600" />				
 				<Component Subtype="AdvancedComputer" Count="600" />
 				<Component Subtype="IronPlate" Count="1500" />				
 				<Component Subtype="SteelPlate" Count="10000" />

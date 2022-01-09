@@ -30,6 +30,7 @@
 			<Component Subtype="Motor" Count="250" />
 			<Component Subtype="LargeTube" Count="380" />
 			<Component Subtype="ArmoredPlate" Count="150" />
+			<Component Subtype="Computer" Count="175" />
 			<Component Subtype="AdvancedComputer" Count="175" />
 			<Component Subtype="IronPlate" Count="800" />
 			<Component Subtype="SteelPlate" Count="500" />
@@ -117,6 +118,7 @@
 			<Component Subtype="Motor" Count="250" />
 			<Component Subtype="LargeTube" Count="380" />
 			<Component Subtype="ArmoredPlate" Count="150" />
+			<Component Subtype="Computer" Count="175" />
 			<Component Subtype="AdvancedComputer" Count="175" />
 			<Component Subtype="IronPlate" Count="800" />
 			<Component Subtype="SteelPlate" Count="500" />

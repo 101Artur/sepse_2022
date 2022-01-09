@@ -74,6 +74,7 @@
 				<Component Subtype="MetalGrid" Count="10" />
 				<Component Subtype="Motor" Count="40" />
 				<Component Subtype="ArmoredPlate" Count="10" />
+				<Component Subtype="Computer" Count="40" />
 				<Component Subtype="AdvancedComputer" Count="40" />
 				<Component Subtype="IronPlate" Count="5" />
 				<Component Subtype="SteelPlate" Count="80" />
@@ -124,6 +125,7 @@
 				<Component Subtype="MetalGrid" Count="15" />
 				<Component Subtype="Motor" Count="50" />
 				<Component Subtype="ArmoredPlate" Count="15" />
+				<Component Subtype="Computer" Count="50" />
 				<Component Subtype="AdvancedComputer" Count="50" />
 				<Component Subtype="IronPlate" Count="10" />
 				<Component Subtype="SteelPlate" Count="100" />

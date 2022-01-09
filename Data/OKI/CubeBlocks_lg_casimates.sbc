@@ -26,6 +26,7 @@
 				<Component Subtype="Motor" Count="200" />
 				<Component Subtype="ArmoredPlate" Count="300" />
 				<Component Subtype="Detector" Count="50" />
+				<Component Subtype="Computer" Count="100" />
 				<Component Subtype="AdvancedComputer" Count="100" />
 				<Component Subtype="IronPlate" Count="600" />
 				<Component Subtype="SteelPlate" Count="700" />
@@ -92,6 +93,7 @@
 				<Component Subtype="MetalGrid" Count="240" />
 				<Component Subtype="CompositeArmor" Count="300" />
 				<Component Subtype="LaserEmitter" Count="40" />
+				<Component Subtype="Computer" Count="300" />
 				<Component Subtype="AdvancedComputer" Count="300" />
 				<Component Subtype="IronPlate" Count="600" />
 				<Component Subtype="SteelPlate" Count="1600" />

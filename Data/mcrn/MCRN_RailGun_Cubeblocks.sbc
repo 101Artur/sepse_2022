@@ -42,6 +42,7 @@
 				<Component Subtype="SuperMagnet" Count="500" />
 				<Component Subtype="QuantumComputer" Count="100" />
 				<Component Subtype="LaserEmitter" Count="300" />
+				<Component Subtype="Computer" Count="500" />
 				<Component Subtype="AdvancedComputer" Count="500" />
 				<Component Subtype="IronPlate" Count="4300" />
 				<Component Subtype="SteelPlate" Count="3000" />

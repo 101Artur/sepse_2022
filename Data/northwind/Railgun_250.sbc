@@ -44,6 +44,7 @@
         <Component Subtype="Superconductor" Count="40" />
 		    <Component Subtype="Electromagnet" Count="100" />
 		    <Component Subtype="Cryocooler" Count="40" />
+        <Component Subtype="Computer" Count="40" />
         <Component Subtype="QuantumComputer" Count="25" />		
         <Component Subtype="AdvancedComputer" Count="40" />
         <Component Subtype="IronPlate" Count="600" />

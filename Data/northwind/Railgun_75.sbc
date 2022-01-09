@@ -43,7 +43,8 @@
         <Component Subtype="LargeTube" Count="20" />
         <Component Subtype="ArmoredPlate" Count="50" />
         <Component Subtype="Superconductor" Count="50" />
-		<Component Subtype="Cryocooler" Count="10" />		
+		    <Component Subtype="Cryocooler" Count="10" />
+        <Component Subtype="Computer" Count="40" />	
         <Component Subtype="AdvancedComputer" Count="40" />
         <Component Subtype="IronPlate" Count="12" />
 		<Component Subtype="SteelPlate" Count="150" />
