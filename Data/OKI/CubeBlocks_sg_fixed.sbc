@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+<!-- ==================================small grid fixed weapons===================================== -->
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>OKI23mmDGfixed</SubtypeId>
+			</Id>
+			<DisplayName>OKI 14.5mm Fixed Machineguns</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI14mmMG_Fixed.dds</Icon>
+			<Description>Linked heavy machineguns fixed firmly in a small grid mount. Good weapon against soft targets such as engineers or spiders. Not the best weapon against armored targets.</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Small\14mmSGFixed\14mmSGFixed.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="5" />
+				<Component Subtype="Construction" Count="15" />
+				<Component Subtype="SmallTube" Count="10" />
+				<Component Subtype="MetalGrid" Count="5" />
+				<Component Subtype="Motor" Count="5" />
+				<Component Subtype="Computer" Count="5" />
+				<Component Subtype="IronPlate" Count="5" />
+				<Component Subtype="SteelPlate" Count="15" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0" StartY="4" EndX="1" EndY="5" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Left" StartX="4" StartY="0" EndX="5" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="..\2481720426\Models\Cubes\Small\14mmSGFixed\14mmSGFixed_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Small\14mmSGFixed\14mmSGFixed_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>OKI23mmDGfixed</BlockPairName>
+			<Center x="0" y="0" z="4" />
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>14</BuildTimeSeconds>
+			<EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="OKI14mmSmallTurret" />
+			<InventoryMaxVolume>0.160</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DeformationRatio>0.2</DeformationRatio>
+			<DamageEffectId>213</DamageEffectId>
+			<PCU>175</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallGatlingGun</TypeId>
+				<SubtypeId>OKI50mmSGfixed</SubtypeId>
+			</Id>
+			<DisplayName>OKI 50mm Fixed Burstcannon</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI50mmSG_Fixed.dds</Icon>
+			<Description>Small grid fixed burstcannon. Designed to engage small, lightly armored targets at long range, with exceptional accuracy. Fires in bursts of 3 projectiles.</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="7" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Small\50mmFixedSmall.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="20" />
+				<Component Subtype="Construction" Count="30" />
+				<Component Subtype="LargeTube" Count="40" />
+				<Component Subtype="MetalGrid" Count="10" />
+				<Component Subtype="Motor" Count="40" />
+				<Component Subtype="ArmoredPlate" Count="10" />
+				<Component Subtype="AdvancedComputer" Count="40" />
+				<Component Subtype="IronPlate" Count="5" />
+				<Component Subtype="SteelPlate" Count="80" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0" StartY="1" EndX="1" EndY="2" />
+				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="2" />
+				<MountPoint Side="Right" StartX="0" StartY="1" EndX="2" EndY="2" />
+				<MountPoint Side="Left" StartX="5" StartY="1" EndX="7" EndY="2" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="..\2481720426\Models\Cubes\Small\50mmFixedSmall_BS1.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Small\50mmFixedSmall_BS2.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>OKI50mmSGfixed</BlockPairName>
+			<Center x="0" y="1" z="6" />
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>18</BuildTimeSeconds>
+			<EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="OKI50mmFixedCannon" />
+			<InventoryMaxVolume>0.240</InventoryMaxVolume>
+			<InventoryFillFactorMin>0.1</InventoryFillFactorMin>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>225</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>OKI122mmAGfixed</SubtypeId>
+			</Id>
+			<DisplayName>OKI 122mm Fixed Assault Cannon</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI122mmASG_fixed.dds</Icon>
+			<Description>Bulky fixed weapon for small vessels. Deals heavy damage to light armor and moderate damage to heavy armor. Very effective against small grid vessels.</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="3" z="11" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Small\122mmFixed.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="20" />
+				<Component Subtype="Construction" Count="40" />
+				<Component Subtype="LargeTube" Count="50" />
+				<Component Subtype="MetalGrid" Count="15" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="ArmoredPlate" Count="15" />
+				<Component Subtype="AdvancedComputer" Count="50" />
+				<Component Subtype="IronPlate" Count="10" />
+				<Component Subtype="SteelPlate" Count="100" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Top" StartX="0" StartY="2" EndX="2" EndY="6" />
+				<MountPoint Side="Right" StartX="2" StartY="0" EndX="6" EndY="3" />
+				<MountPoint Side="Left" StartX="5" StartY="0" EndX="9" EndY="3" />
+				<MountPoint Side="Bottom" StartX="0" StartY="6" EndX="2" EndY="9" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.5" File="..\2481720426\Models\Cubes\Small\122mmFixed_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2481720426\Models\Cubes\Small\122mmFixed_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>OKI122mmAGfixed</BlockPairName>
+			<Center x="0" y="1" z="8" />
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>15</BuildTimeSeconds>
+			<EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="OKI122mmFixedCannon" />
+			<InventoryMaxVolume>0.30</InventoryMaxVolume>
+			<InventoryFillFactorMin>0.1</InventoryFillFactorMin>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>225</PCU>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+  
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		
+		  <Id>
+			<TypeId>LargeMissileTurret</TypeId>
+			<SubtypeId>BattleshipCannonMK2</SubtypeId>
+		  </Id>
+		  <DisplayName>Battleship Cannon MK2</DisplayName>
+		  <Icon>..\1920388300\textures\GUI\Icons\CannonMK2_overlay.dds</Icon>
+		  <Description>Battleship Cannon MK2's are configurable automated turrets that target anything hostile within its range.
+			
+			Requires 381mm HE Shell Stacks. Can be controlled manually from a cockpit. Use conveyors to allow automatic reloading.
+			</Description>
+		  <GuiVisible>false</GuiVisible>
+		  <CubeSize>Large</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="5" y="2" z="5" />
+		  <Center x="2" y="0" z="2" />
+		  <ModelOffset x="0" y="0" z="0" />
+		  <Model>..\1920388300\Models\Cubes\large\MK2Base.mwm</Model>
+		  <UseModelIntersection>true</UseModelIntersection>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>100</BuildTimeSeconds>
+		  <InventoryMaxVolume>0.6858</InventoryMaxVolume> <!-- Holds 3 Mags on 1x -->
+		  <Components>
+		    <Component Subtype="SteelPlate" Count="3000" />
+			<Component Subtype="Construction" Count="1000" />
+			<Component Subtype="Motor" Count="350" />
+			<Component Subtype="LargeTube" Count="250" />
+			<Component Subtype="CompositeArmor" Count="450" />
+			<Component Subtype="LaserEmitter" Count="50" />
+			<Component Subtype="AdvancedComputer" Count="240" />
+			<Component Subtype="IronPlate" Count="1750" />
+			<Component Subtype="SteelPlate" Count="1100" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+		  <!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="..\1920388300\Models\Cubes\Large\MK2_con1.mwm" />
+			<Model BuildPercentUpperBound="0.66" File="..\1920388300\Models\Cubes\Large\MK2_con2.mwm" />
+			<Model BuildPercentUpperBound="1.00" File="..\1920388300\Models\Cubes\Large\MK2_con3.mwm" />
+		  </BuildProgressModels>
+		  <VoxelPlacement>
+			<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+			<StaticMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0</MinAllowed>
+			</StaticMode>
+			<DynamicMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0.01</MinAllowed>
+			</DynamicMode>
+		  </VoxelPlacement>
+		  <BlockPairName>BattleshipCannonMK2</BlockPairName>
+		  <MirroringY>Z</MirroringY>
+		  <MirroringZ>Y</MirroringZ>
+		  <EdgeType>Light</EdgeType>
+		  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+		  <WeaponDefinitionId Subtype="Mark_2" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Missile</DestroyEffect>
+		  <DestroySound>WepLrgWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <MinElevationDegrees>-5</MinElevationDegrees>
+		  <MaxElevationDegrees>30</MaxElevationDegrees>
+		  <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+		  <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+		  <RotationSpeed>0.0</RotationSpeed>
+		  <ElevationSpeed>0.0</ElevationSpeed>
+		  <MaxRangeMeters>2600</MaxRangeMeters>
+		  <DeformationRatio>0.1</DeformationRatio>
+		  <AiEnabled>false</AiEnabled>
+		  <IdleRotation>false</IdleRotation>
+		  <EmissiveColorPreset>Default</EmissiveColorPreset>
+		  <MinFov>0.1</MinFov>
+		  <MaxFov>1.04719755</MaxFov>
+		  <PCU>525</PCU>
+		  
+    </Definition>
+
+
+
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		
+		  <Id>
+			<TypeId>LargeMissileTurret</TypeId>
+			<SubtypeId>BattleshipCannonMK22</SubtypeId>
+		  </Id>
+		  <DisplayName>Battleship Cannon MK2 Round-Base</DisplayName>
+		  <Icon>..\1920388300\textures\GUI\Icons\CannonMK2_overlay.dds</Icon>
+		  <GuiVisible>false</GuiVisible>
+		  <CubeSize>Large</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="5" y="2" z="5" />
+		  <Center x="2" y="0" z="2" />
+		  <ModelOffset x="0" y="0" z="0" />
+		  <Model>..\1920388300\Models\Cubes\large\MK2Base2.mwm</Model>
+		  <UseModelIntersection>true</UseModelIntersection>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>40</BuildTimeSeconds>
+		  <InventoryMaxVolume>1.000</InventoryMaxVolume>
+		  <Components>
+		    <Component Subtype="SteelPlate" Count="1000" />
+			<Component Subtype="Construction" Count="1000" />
+			<Component Subtype="Motor" Count="350" />
+			<Component Subtype="LargeTube" Count="250" />
+			<Component Subtype="CompositeArmor" Count="450" />
+			<Component Subtype="LaserEmitter" Count="50" />
+			<Component Subtype="AdvancedComputer" Count="240" />
+			<Component Subtype="IronPlate" Count="1700" />
+			<Component Subtype="SteelPlate" Count="500" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+		  <!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="..\1920388300\Models\Cubes\Large\MK2_con1.mwm" />
+			<Model BuildPercentUpperBound="0.66" File="..\1920388300\Models\Cubes\Large\MK2_con2.mwm" />
+			<Model BuildPercentUpperBound="1.00" File="..\1920388300\Models\Cubes\Large\MK2_con3.mwm" />
+		  </BuildProgressModels>
+		  <BlockPairName>BattleshipCannonMK22</BlockPairName>
+		  <MirroringY>Z</MirroringY>
+		  <MirroringZ>Y</MirroringZ>
+		  <EdgeType>Light</EdgeType>
+		  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+		  <WeaponDefinitionId Subtype="Mark_2" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+		  <DestroySound>WepLrgWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <MinElevationDegrees>-5</MinElevationDegrees>
+		  <MaxElevationDegrees>30</MaxElevationDegrees>
+		  <MinAzimuthDegrees>-110</MinAzimuthDegrees>
+		  <MaxAzimuthDegrees>110</MaxAzimuthDegrees>
+		  <RotationSpeed>0.00012</RotationSpeed>
+		  <ElevationSpeed>0.00014</ElevationSpeed>
+		  <MaxRangeMeters>2000</MaxRangeMeters>
+		  <AiEnabled>false</AiEnabled>
+		  <IdleRotation>false</IdleRotation>
+		  <EmissiveColorPreset>Default</EmissiveColorPreset>
+		  <MinFov>0.1</MinFov>
+		  <MaxFov>1.04719755</MaxFov>
+		  <PCU>525</PCU>
+		  
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--Block Groups -->
+    <BlockVariantGroups>
+
+        <!-- MCRN Weapons -->
+
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MCRNGroup" />
+            <Icon>..\1824058403\Textures\GUI\Icons\Cubes\MCRNRailgun.dds</Icon>
+            <DisplayName>DisplayName_BlockGroup_MCRNWeapons</DisplayName>
+            <Description>MCRN Weaponry.</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="MCRNRailGunLB" />
+            </Blocks>
+        </BlockVariantGroup>
+       
+  </BlockVariantGroups>
+
+
+
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>MCRNRailGunLB</SubtypeId>
+			</Id>
+			<DisplayName>MCRN Railgun (VX-12 Foehammer)</DisplayName>
+			<Icon>..\1824058403\Textures\GUI\Icons\Cubes\MCRNRailgun.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="2" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\1824058403\Models\Cubes\MCRNRailGunBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="7000" />
+				<Component Subtype="Construction" Count="2000" />
+				<Component Subtype="LargeTube" Count="800" />
+				<Component Subtype="CompositeArmor" Count="2000" />
+				<Component Subtype="Motor" Count="1000" />
+				<Component Subtype="SuperMagnet" Count="500" />
+				<Component Subtype="QuantumComputer" Count="100" />
+				<Component Subtype="LaserEmitter" Count="300" />
+				<Component Subtype="AdvancedComputer" Count="500" />
+				<Component Subtype="IronPlate" Count="4000" />
+				<Component Subtype="SteelPlate" Count="3000" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="5" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\1824058403\Models\Cubes\MCRNRailgunBase_Constr1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\1824058403\Models\Cubes\MCRNRailgunBase_Constr2.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>MCRNRailGun</BlockPairName>
+			<Description>VX-12 Foehammer Turreted Ultra-Heavy railgun. This weapon has an azimuth of -90 to +90 and elevation of 0 to +70 with a max range of 5km. Will not target grids less than 20m in diameter. RoF of 5/min. Requires 500MW to fire.</Description>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="MCRNRails" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<IdleRotation>false</IdleRotation>
+			<AiEnabled>false</AiEnabled>
+			<MaxRangeMeters>5000</MaxRangeMeters>
+			<IdlePower>0.0002</IdlePower>
+			<UsePower>6</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>800</MaxRangeMeters>
+			<PCU>700</PCU>
+		</Definition>
+	</CubeBlocks>
+
+	<BlockPositions>
+		<BlockPosition>
+			<Name>MCRNRailGun</Name>
+			<Position>
+				<X>9</X>
+				<Y>9</Y>
+			</Position>
+		</BlockPosition>
+	</BlockPositions>
+
+	<!-- Research Blocks -->
+	<ResearchBlocks> 
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LargeMissileTurret" Subtype="MCRNRailGunLB" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+	</ResearchBlocks>  
+
+</Definitions>

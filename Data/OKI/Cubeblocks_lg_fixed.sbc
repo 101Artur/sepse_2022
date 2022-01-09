@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+<!-- =====================================large grid fixed weapons======================================= -->
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>OKI50mmFGAT</SubtypeId>
+			</Id>
+			<DisplayName>OKI 50mm Fixed Stormgun</DisplayName>
+			<Description>Massive gatling cannon designed to be used in straffing runs. Has great range and good rate of fire. Uses burstcannon shells.</Description>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI50mmGAT_Fixed.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>..\2481720426\Models\Cubes\Large\Stormgun.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="500" />
+				<Component Subtype="Construction" Count="300" />
+				<Component Subtype="LargeTube" Count="250" />
+				<Component Subtype="Motor" Count="120" />
+				<Component Subtype="ArmoredPlate" Count="100" />
+				<Component Subtype="MetalGrid" Count="70" />
+				<Component Subtype="AdvancedComputer" Count="40" />
+				<Component Subtype="IronPlate" Count="30" />
+				<Component Subtype="SteelPlate" Count="500" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="3.0" StartY="0.0" EndX="5.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="3.0" EndX="1.0" EndY="4.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Large\Stormgun_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2481720426\Models\Cubes\Large\Stormgun_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Large\Stormgun_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>OKI50mmFGAT</BlockPairName>
+			<Center x="0" y="0" z="4" />
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<EdgeType>Heavy</EdgeType>
+			<WeaponDefinitionId Subtype="OKI50mmFixedGun" />
+			<InventoryMaxVolume>0.960</InventoryMaxVolume>
+			<InventoryFillFactorMin>0.1</InventoryFillFactorMin>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>225</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>OKI230mmBCfixed</SubtypeId>
+			</Id>
+			<DisplayName>OKI 230mm Fixed Battlecannon</DisplayName>
+			<Description>Large caliber anti-capital ship cannon in fixed mount. Best used for large grid assault ships. Great range and damage against light and heavy armor.</Description>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI230mmBC_Fixed.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>..\2481720426\Models\Cubes\Large\Battlecannon.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="500" />
+				<Component Subtype="Construction" Count="400" />
+				<Component Subtype="LargeTube" Count="350" />
+				<Component Subtype="Motor" Count="180" />
+				<Component Subtype="CompositeArmor" Count="100" />
+				<Component Subtype="MetalGrid" Count="80" />
+				<Component Subtype="AdvancedComputer" Count="100" />
+				<Component Subtype="IronPlate" Count="100" />
+				<Component Subtype="SteelPlate" Count="700" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+				<MountPoint Side="Left" StartX="3.0" StartY="0.0" EndX="5.0" EndY="1.0"/>
+				<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="3.0" EndX="1.0" EndY="4.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Large\Battlecannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2481720426\Models\Cubes\Large\Battlecannon_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2481720426\Models\Cubes\Large\Battlecannon_BS3.mwm"/>
+			</BuildProgressModels>
+			<StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+			<OperationalPowerConsumption>0.2</OperationalPowerConsumption>
+			<BlockPairName>OKI230mmBCfixed</BlockPairName>
+			<Center x="0" y="0" z="4" />
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<EdgeType>Heavy</EdgeType>
+			<WeaponDefinitionId Subtype="OKI230mmFixedCannon" />
+			<InventoryMaxVolume>0.960</InventoryMaxVolume>
+			<InventoryFillFactorMin>0.1</InventoryFillFactorMin>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>400</PCU>
+		</Definition>
+
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>OKI75mmHVPfixed</SubtypeId>
+			</Id>
+			<DisplayName>OKI Hyper-P 75mm Penetrator Driver</DisplayName>
+			<Description>A massive electromagnetic accelerator that launches 75mm depleted uranium slugs at ranges of up to 3200 meteres at high speed and good accuracy. This weapon is the ultimate sniper system that is capable of piercing up to 2 heavy armor blocks and destroying any device or weapons it hits. Consumes a lot of energy while recharging!</Description>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI75HyperPfixed.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="8" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Center x="0" y="1" z="6" />
+			<Model>..\2481720426\Models\Cubes\Large\75mmHyperP.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="500" />
+				<Component Subtype="Construction" Count="600" />
+				<Component Subtype="LargeTube" Count="350" />
+				<Component Subtype="Motor" Count="200" />
+				<Component Subtype="CompositeArmor" Count="200" />
+				<Component Subtype="Superconductor" Count="200" />
+				<Component Subtype="Cryocooler" Count="200" />
+				<Component Subtype="Electromagnet" Count="400" />
+				<Component Subtype="AdvancedComputer" Count="100" />
+				<Component Subtype="IronPlate" Count="250" />
+				<Component Subtype="SteelPlate" Count="600" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="4" />
+				<MountPoint Side="Right" StartX="0" StartY="1" EndX="2" EndY="2" />
+				<MountPoint Side="Right" StartX="2" StartY="0" EndX="3" EndY="2" />
+				<MountPoint Side="Left" StartX="5" StartY="1" EndX="8" EndY="2" />
+				<MountPoint Side="Left" StartX="5" StartY="0" EndX="6" EndY="2" />
+				<MountPoint Side="Bottom" StartX="0" StartY="5" EndX="1" EndY="6" />
+				<MountPoint Side="Back" StartX="0" StartY="1" EndX="1" EndY="2" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Large\75mmHyperP_BS1.mwm"/>
+			</BuildProgressModels>
+			<StandbyPowerConsumption>1</StandbyPowerConsumption>
+			<BlockPairName>OKI75mmHVPfixed</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>60</BuildTimeSeconds>
+			<EdgeType>Heavy</EdgeType>
+			<WeaponDefinitionId Subtype="OKI75mmFixedHVP" />
+			<InventoryMaxVolume>0.960</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>400</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>OKI180mmHVXfixed</SubtypeId>
+			</Id>
+			<DisplayName>OKI Hyper-X 180mm Explosive Driver</DisplayName>
+			<Description>A massive electromagnetic accelerator that launches 180mm explosive shells at ranges of up to 2400 meteres at high speed and good accuracy. Explosive shell does not include any propellant to accelerate it which allows for an explosion comparable to the one of 230mm shells. This weapon is the ultimate artillery system. Consumes a lot of energy while recharging!</Description>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI180HyperXfixed.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="8" />
+			<ModelOffset x="0" y="0" z="0"/>
+			<Center x="0" y="1" z="6" />
+			<Model>..\2481720426\Models\Cubes\Large\180mmHyperX.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="500" />
+				<Component Subtype="Construction" Count="450" />
+				<Component Subtype="LargeTube" Count="300" />
+				<Component Subtype="Motor" Count="300" />
+				<Component Subtype="CompositeArmor" Count="150" />
+				<Component Subtype="AdvancedComputer" Count="200" />
+				<Component Subtype="IronPlate" Count="800" />
+				<Component Subtype="SteelPlate" Count="1000" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="4" />
+				<MountPoint Side="Right" StartX="0" StartY="1" EndX="2" EndY="2" />
+				<MountPoint Side="Right" StartX="2" StartY="0" EndX="3" EndY="2" />
+				<MountPoint Side="Left" StartX="5" StartY="1" EndX="8" EndY="2" />
+				<MountPoint Side="Left" StartX="5" StartY="0" EndX="6" EndY="2" />
+				<MountPoint Side="Bottom" StartX="0" StartY="5" EndX="1" EndY="6" />
+				<MountPoint Side="Back" StartX="0" StartY="1" EndX="1" EndY="2" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Large\180mmHyperX_BS1.mwm"/>
+			</BuildProgressModels>
+			<StandbyPowerConsumption>1</StandbyPowerConsumption>
+			<BlockPairName>OKI180mmHVXfixed</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>60</BuildTimeSeconds>
+			<EdgeType>Heavy</EdgeType>
+			<WeaponDefinitionId Subtype="OKI180mmFixedHVX" />
+			<InventoryMaxVolume>0.960</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>400</PCU>
+		</Definition>
+		
+
+	</CubeBlocks>
+</Definitions>

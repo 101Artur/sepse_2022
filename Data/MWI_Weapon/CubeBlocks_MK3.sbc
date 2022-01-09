@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+  
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		
+		  <Id>
+			<TypeId>LargeMissileTurret</TypeId>
+			<SubtypeId>BattleshipCannonMK3</SubtypeId>
+		  </Id>
+		  <DisplayName>Battleship Cannon MK3</DisplayName>
+		  <Icon>..\1920388300\textures\GUI\Icons\CannonMK3_overlay.dds</Icon>
+		  <Description>Battleship Cannon MK3's are configurable automated turrets that target anything hostile within its range.
+			
+			Requires either HE or AP 406mm Shell Stacks. Can be controlled manually from a cockpit. Use conveyors to allow automatic reloading.
+			</Description>
+		  <GuiVisible>false</GuiVisible>
+		  <CubeSize>Large</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="7" y="2" z="7" />
+		  <Center x="3" y="0" z="3" />
+		  <ModelOffset x="0" y="0" z="0" />
+		  <Model>..\1920388300\Models\Cubes\large\MainCannonBase.mwm</Model>
+		  <UseModelIntersection>true</UseModelIntersection>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>120</BuildTimeSeconds>
+		  <InventoryMaxVolume>0.7308</InventoryMaxVolume> <!-- Holds 2 Mags on 1x -->
+		  <Components>
+		    <Component Subtype="SteelPlate" Count="3000" />
+			<Component Subtype="Construction" Count="4000" />
+			<Component Subtype="Motor" Count="2000" />
+			<Component Subtype="LargeTube" Count="1000" />
+			<Component Subtype="CompositeArmor" Count="1000" />
+			<Component Subtype="QuantumComputer" Count="150" />
+			<Component Subtype="AdvancedComputer" Count="1200" />
+			<Component Subtype="IronPlate" Count="3500" />
+			<Component Subtype="SteelPlate" Count="1500" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="7" EndY="7" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="..\1920388300\Models\Cubes\Large\MainCannonConstruct1.mwm" />
+			<Model BuildPercentUpperBound="0.66" File="..\1920388300\Models\Cubes\Large\MainCannonConstruct2.mwm" />
+			<Model BuildPercentUpperBound="1.00" File="..\1920388300\Models\Cubes\Large\MainCannonConstruct3.mwm" />
+		  </BuildProgressModels>
+		  <VoxelPlacement>
+			<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+			<StaticMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0</MinAllowed>
+			</StaticMode>
+			<DynamicMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0.01</MinAllowed>
+			</DynamicMode>
+		  </VoxelPlacement>
+		  <BlockPairName>BattleshipCannonMK3</BlockPairName>
+		  <MirroringY>Z</MirroringY>
+		  <MirroringZ>Y</MirroringZ>
+		  <EdgeType>Light</EdgeType>
+		  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+		  <WeaponDefinitionId Subtype="Mark_3" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Warhead_15</DestroyEffect>
+		  <DestroySound>WepLrgWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <MinElevationDegrees>-5</MinElevationDegrees>
+		  <MaxElevationDegrees>25</MaxElevationDegrees>
+		  <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+		  <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+		  <RotationSpeed>0.0</RotationSpeed>
+		  <ElevationSpeed>0.0</ElevationSpeed>
+		  <MaxRangeMeters>3500</MaxRangeMeters>
+		  <DeformationRatio>0.1</DeformationRatio>
+		  <AiEnabled>false</AiEnabled>
+		  <IdleRotation>false</IdleRotation>
+		  <EmissiveColorPreset>Default</EmissiveColorPreset>
+		  <MinFov>0.1</MinFov>
+		  <MaxFov>1.04719755</MaxFov>
+		  <PCU>700</PCU>
+		  
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

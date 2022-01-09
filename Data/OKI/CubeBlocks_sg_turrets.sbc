@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+
+<!-- =====================================small grid turrets============================================ -->
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKI23mmSG</SubtypeId>
+			</Id>
+			<DisplayName>OKI 14.5mm Machinegun Turret</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI14mmMG_Turret.dds</Icon>
+			<Description>Simple defence turret that can effectively intercept engineers, meteors, and missiles.</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="3" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Small\14mmTurretSmall.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10" />
+				<Component Subtype="Construction" Count="30" />
+				<Component Subtype="SmallTube" Count="20" />
+				<Component Subtype="MetalGrid" Count="5" />
+				<Component Subtype="Motor" Count="7" />
+				<Component Subtype="RadioCommunication" Count="5" />
+				<Component Subtype="Computer" Count="10" />
+				<Component Subtype="IronPlate" Count="10" />
+				<Component Subtype="SteelPlate" Count="30" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="1" StartY="1" EndX="4" EndY="4" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Small\14mmTurretSmall_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2481720426\Models\Cubes\Small\14mmTurretSmall_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2481720426\Models\Cubes\Small\14mmTurretSmall_BS3.mwm"/>
+			</BuildProgressModels>
+			<VoxelPlacement>
+				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BlockPairName>OKI23mmDG</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>20</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKI14mmSmallTurret" />
+			<InventoryMaxVolume>0.160</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.003</RotationSpeed>
+			<ElevationSpeed>0.003</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>1000</MaxRangeMeters>
+			<MinFov>0.1</MinFov>
+			<MaxFov>2</MaxFov>
+			<AiEnabled>false</AiEnabled>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>225</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKI50mmSG</SubtypeId>
+			</Id>
+			<DisplayName>OKI 50mm Burstcannon Turret</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI50mmSG_Turret.dds</Icon>
+			<Description>A burstcannon fitted on a simple turret chassis. Designed to engage small lightly armored targets at long range with exceptional accuracy. Fires in bursts of 3 projectiles.</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="3" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Small\50mmTurretSmall.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="500" />
+				<Component Subtype="Construction" Count="40" />
+				<Component Subtype="LargeTube" Count="130" />
+				<Component Subtype="MetalGrid" Count="5" />
+				<Component Subtype="Motor" Count="200" />
+				<Component Subtype="ArmoredPlate" Count="120" />
+				<Component Subtype="Detector" Count="15" />
+				<Component Subtype="AdvancedComputer" Count="150" />
+				<Component Subtype="IronPlate" Count="50" />
+				<Component Subtype="SteelPlate" Count="300" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="1" StartY="1" EndX="4" EndY="4" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Small\50mmTurretSmall_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2481720426\Models\Cubes\Small\50mmTurretSmall_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2481720426\Models\Cubes\Small\50mmTurretSmall_BS3.mwm"/>
+			</BuildProgressModels>
+			<VoxelPlacement>
+				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BlockPairName>OKI50mmAG</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>20</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKI50mmSmallTurret" />
+			<InventoryMaxVolume>0.240</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.001</RotationSpeed>
+			<ElevationSpeed>0.001</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>1000</MaxRangeMeters>
+			<AiEnabled>false</AiEnabled>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>400</PCU>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>   
+
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>HEShell460mm_Blueprint</SubtypeId>
+      </Id>
+      <DisplayName>460mm HE Shell Stack</DisplayName>
+      <Icon>..\1920388300\textures\GUI\Icons\AmmoIcons\X3_3x250mm_icon.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="800" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="250" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Cobalt" />
+	<Item Amount="600" TypeId="Ingot" SubtypeId="Copper" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="HEShell460mm" />
+      <BaseProductionTimeInSeconds>69</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+  </Blueprints>
+</Definitions>

@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<!-- ====================================capital ship turrets======================================= -->
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKI50mmGat</SubtypeId>
+			</Id>
+			<DisplayName>OKI 50mm Stormgun Turret</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI50mmGAT_Turret.dds</Icon>
+			<Description>Massive turret for capital ships with a rapid-fire heavy gatling cannon. Best used as a support weapon at its maximum range or as a fighter deterent at medium ranges. Has limited arc of fire that does not cover the rear of the turret at all!</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="2" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>..\2481720426\Models\Cubes\Large\Stormgun_Turret.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="1000" />
+				<Component Subtype="Construction" Count="2200" />
+				<Component Subtype="MetalGrid" Count="800" />
+				<Component Subtype="LargeTube" Count="275" />
+				<Component Subtype="Motor" Count="1200" />
+				<Component Subtype="ArmoredPlate" Count="600" />
+				<Component Subtype="Detector" Count="50" />				
+				<Component Subtype="AdvancedComputer" Count="400" />
+				<Component Subtype="IronPlate" Count="1000" />				
+				<Component Subtype="SteelPlate" Count="1500" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Large\Stormgun_Turret_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2481720426\Models\Cubes\Large\Stormgun_Turret_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2481720426\Models\Cubes\Large\Stormgun_Turret_BS3.mwm"/>
+			</BuildProgressModels>
+			<VoxelPlacement>
+				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BlockPairName>OKI50mmGat</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Heavy</EdgeType>
+			<StandbyPowerConsumption>0.35</StandbyPowerConsumption>
+			<OperationalPowerConsumption>0.35</OperationalPowerConsumption>
+			<BuildTimeSeconds>65</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKI50mmCapitalTurret" />
+			<InventoryMaxVolume>0.960</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>60</MaxElevationDegrees>
+			<MinAzimuthDegrees>-135</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>135</MaxAzimuthDegrees>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<AiEnabled>false</AiEnabled>
+			<MaxRangeMeters>1000</MaxRangeMeters>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>400</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKI230mmBC</SubtypeId>
+			</Id>
+			<DisplayName>OKI 230mm Battlecannon Turret</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI230mmBC_Turret.dds</Icon>
+			<Description>Massive turret with integrated battlecannon. Powerful, accurate and deadly, but with a limited arc of fire that does not extend to the rear of the turret.</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="2" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>..\2481720426\Models\Cubes\Large\Battlecannon_Turret.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="7000" />
+				<Component Subtype="Construction" Count="3000" />
+				<Component Subtype="Cryocooler" Count="425" />
+				<Component Subtype="LargeTube" Count="300" />
+				<Component Subtype="Motor" Count="600" />
+				<Component Subtype="CompositeArmor" Count="800" />
+				<Component Subtype="LaserEmitter" Count="100" />				
+				<Component Subtype="AdvancedComputer" Count="400" />
+				<Component Subtype="IronPlate" Count="800" />				
+				<Component Subtype="SteelPlate" Count="3000" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Large\Battlecannon_Turret_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2481720426\Models\Cubes\Large\Battlecannon_Turret_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2481720426\Models\Cubes\Large\Battlecannon_Turret_BS3.mwm"/>
+			</BuildProgressModels>
+			<VoxelPlacement>
+				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BlockPairName>OKI230mmBC</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+			<OperationalPowerConsumption>0.2</OperationalPowerConsumption>
+			<EdgeType>Heavy</EdgeType>
+			<BuildTimeSeconds>65</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKI230mmCapitalTurret" />
+			<InventoryMaxVolume>0.960</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>60</MaxElevationDegrees>
+			<MinAzimuthDegrees>-135</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>135</MaxAzimuthDegrees>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<AiEnabled>false</AiEnabled>
+			<MaxRangeMeters>1500</MaxRangeMeters>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>525</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKIHvyMissileTurret</SubtypeId>
+			</Id>
+			<DisplayName>OKI Heavy Missile Turret</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKIHvyMissileTurret.dds</Icon>
+			<Description>Standard issule large rocket launcher installed on a capital turret chassis. Fires salvoes of 200mm unguided rockets in very rapid succession. Has a limited arc of fire that does not cover the rear of the turret.</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="2" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>..\2481720426\Models\Cubes\Large\HM_Turret.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="5000" />
+				<Component Subtype="Construction" Count="5000" />
+				<Component Subtype="Cryocooler" Count="1200" />
+				<Component Subtype="LargeTube" Count="1500" />
+				<Component Subtype="Motor" Count="2000" />
+				<Component Subtype="ArmoredPlate" Count="1500" />
+				<Component Subtype="Detector" Count="200" />				
+				<Component Subtype="AdvancedComputer" Count="800" />
+				<Component Subtype="IronPlate" Count="1200" />				
+				<Component Subtype="SteelPlate" Count="15000" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Large\HM_Turret_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2481720426\Models\Cubes\Large\HM_Turret_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2481720426\Models\Cubes\Large\HM_Turret_BS3.mwm"/>
+			</BuildProgressModels>
+			<VoxelPlacement>
+				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BlockPairName>OKIHvyMissileTurret</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Heavy</EdgeType>
+			<StandbyPowerConsumption>0.35</StandbyPowerConsumption>
+			<OperationalPowerConsumption>0.35</OperationalPowerConsumption>
+			<BuildTimeSeconds>65</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKIHeavyMissileTurret" />
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>1.440</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>60</MaxElevationDegrees>
+			<MinAzimuthDegrees>-135</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>135</MaxAzimuthDegrees>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<AiEnabled>false</AiEnabled>
+			<MaxRangeMeters>1000</MaxRangeMeters>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>400</PCU>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKI230mmBAT</SubtypeId>
+			</Id>
+			<DisplayName>OKI 230mm Battlecannon Siege Turret</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI230mmBAT_Turret.dds</Icon>
+			<Description>Devastating siege weapon capable of destroying capital ships within seconds. Fires 3 projectiles in rapid succession and can cover all 360 degrees with barrel elevation up to 90 degrees. Slightly inaccurate and has slow reload times.</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="3" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Large\230BatteryCannon\230mmBatteryCannonBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="5000" />
+				<Component Subtype="Construction" Count="4500" />
+				<Component Subtype="Cryocooler" Count="800 " />
+				<Component Subtype="LargeTube" Count="500" />
+				<Component Subtype="Motor" Count="1000" />
+				<Component Subtype="CompositeArmor" Count="1200" />
+				<Component Subtype="LaserEmitter" Count="150" />				
+				<Component Subtype="AdvancedComputer" Count="600" />
+				<Component Subtype="IronPlate" Count="1500" />				
+				<Component Subtype="SteelPlate" Count="10000" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.88" StartY="1.00" EndX="4.12" EndY="4.00"/>
+				<MountPoint Side="Bottom" StartX="2.00" StartY="4.00" EndX="3.00" EndY="4.35"/>
+				<MountPoint Side="Bottom" StartX="2.00" StartY="0.65" EndX="3.00" EndY="1.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.25" File="..\2481720426\Models\Cubes\Large\230BatteryCannon\230mmBatteryCannonBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.50" File="..\2481720426\Models\Cubes\Large\230BatteryCannon\230mmBatteryCannonBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="0.75" File="..\2481720426\Models\Cubes\Large\230BatteryCannon\230mmBatteryCannonBase_BS3.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Large\230BatteryCannon\230mmBatteryCannonBase_BS4.mwm"/>
+			</BuildProgressModels>
+			<StandbyPowerConsumption>0.05</StandbyPowerConsumption>
+			<OperationalPowerConsumption>0.5</OperationalPowerConsumption>
+			<BlockPairName>OKI230mmBAT</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Heavy</EdgeType>
+			<BuildTimeSeconds>100</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKI230mmCapitalTurret" />
+			<InventoryMaxVolume>1.440</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-30</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.00035</RotationSpeed>
+			<ElevationSpeed>0.00035</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>1500</MaxRangeMeters>
+			<DeformationRatio>0.2</DeformationRatio>
+			<PCU>525</PCU>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

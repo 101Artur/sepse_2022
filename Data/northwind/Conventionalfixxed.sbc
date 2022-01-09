@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<CubeBlocks>
+
+ 
+     <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+			<SubtypeId>RotaryCannon</SubtypeId>
+		  </Id>
+      <DisplayName>30mm Rotary Cannon</DisplayName>
+      <Icon>..\2016817336\Textures\icons\RotaryCannon.png</Icon>
+	  <Description>30mm Rotary Cannon, can be loaded with Standard 30mm rounds for or DU rounds for anti armor. 800m/s projectile speed.</Description>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>true</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="6" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="1" y="0" z="4" />
+      <Model>..\2016817336\Models\RotaryCannon.mwm</Model>
+	  <UseModelIntersection>true</UseModelIntersection>
+	  <BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2016817336\Models\RotaryCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2016817336\Models\RotaryCannon_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2016817336\Models\RotaryCannon_BS3.mwm"/>
+	  </BuildProgressModels>
+           <VoxelPlacement>
+             <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+            <StaticMode>
+            <PlacementMode>OutsideVoxel</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+            </StaticMode>
+            <DynamicMode>
+            <PlacementMode>OutsideVoxel</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0.01</MinAllowed>
+            </DynamicMode>
+           </VoxelPlacement>	  
+		  <Components>
+		    <Component Subtype="SteelPlate" Count="100" />
+			<Component Subtype="Construction" Count="80" />
+			<Component Subtype="Motor" Count="80" />
+			<Component Subtype="LargeTube" Count="25" />
+			<Component Subtype="ArmoredPlate" Count="80" />
+			<Component Subtype="AdvancedComputer" Count="40" />
+			<Component Subtype="IronPlate" Count="105" />
+			<Component Subtype="SteelPlate" Count="50" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <BlockPairName>RotaryCannon</BlockPairName>
+      <EdgeType>Light</EdgeType>
+	  <WeaponDefinitionId Subtype="RotaryCannon" />
+	  <InventoryMaxVolume>0.3</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>	  
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+      <DisassembleRatio>5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>225</PCU>
+      <IsAirTight>false</IsAirTight> 	  
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+			<SubtypeId>203mmHowitzer</SubtypeId>
+		  </Id>
+      <DisplayName>203mm Howitzer</DisplayName>
+      <Icon>..\2016817336\Textures\icons\NWHowitzerIcon.png</Icon>
+	  <Description>203mm Howitzer, uses bagged charge ammo that lets you choose a how much propellant to load for different ranges. Use ammo cycle to change range, projectile speed is 125ms, 225ms and 325ms. </Description>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>true</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="21" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="1" y="1" z="19" />
+      <Model>..\2016817336\Models\203mmHowitzer.mwm</Model>
+	  <UseModelIntersection>true</UseModelIntersection>	  
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2016817336\Models\203mmHowitzer_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2016817336\Models\203mmHowitzer_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2016817336\Models\203mmHowitzer_BS3.mwm"/>
+			</BuildProgressModels>
+           <VoxelPlacement>
+             <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+            <StaticMode>
+            <PlacementMode>OutsideVoxel</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+            </StaticMode>
+            <DynamicMode>
+            <PlacementMode>OutsideVoxel</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0.01</MinAllowed>
+            </DynamicMode>
+           </VoxelPlacement>	  
+          <Components>
+		    <Component Subtype="SteelPlate" Count="400" />
+			<Component Subtype="Construction" Count="80" />
+			<Component Subtype="Motor" Count="40" />
+			<Component Subtype="LargeTube" Count="40" />
+			<Component Subtype="ArmoredPlate" Count="100" />
+			<Component Subtype="LaserEmitter" Count="50" />
+			<Component Subtype="AdvancedComputer" Count="45" />
+			<Component Subtype="IronPlate" Count="120" />
+			<Component Subtype="SteelPlate" Count="100" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <BlockPairName>203mmHowitzer</BlockPairName>
+      <EdgeType>Light</EdgeType>
+	  <WeaponDefinitionId Subtype="203mmHowitzer" />
+	  <InventoryMaxVolume>0.2</InventoryMaxVolume>
+      <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+      <DisassembleRatio>5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>225</PCU>
+      <IsAirTight>false</IsAirTight> 	  
+    </Definition>	
+
+ 
+  </CubeBlocks>
+</Definitions>

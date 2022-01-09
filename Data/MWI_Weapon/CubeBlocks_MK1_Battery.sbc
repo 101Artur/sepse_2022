@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+	
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+			<SubtypeId>Static150mm</SubtypeId>
+		  </Id>
+		  <DisplayName>MK1 Battery</DisplayName>
+		  <Icon>..\1920388300\textures\icon\Static150mm_icon.dds</Icon>
+		  <Description>MK1 Battery's can be connected with other inventories for automated reloading.
+			
+			Requires 330mm HE Shell Stacks.
+			</Description>
+		  <CubeSize>Large</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="1" y="1" z="4" />
+		  <ModelOffset x="0" y="0" z="0" />
+		  <Model>..\1920388300\Models\Large\Static_Cannon_150mm.mwm</Model>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>45</BuildTimeSeconds>
+		  <InventoryMaxVolume>0.495</InventoryMaxVolume> <!-- Holds 5 Mags on 1x -->
+		  <Components>
+		    <Component Subtype="SteelPlate" Count="1000" />
+			<Component Subtype="Construction" Count="150" />
+			<Component Subtype="Motor" Count="100" />
+			<Component Subtype="LargeTube" Count="250" />
+			<Component Subtype="ArmoredPlate" Count="150" />
+			<Component Subtype="AdvancedComputer" Count="200" />
+			<Component Subtype="IronPlate" Count="370" />
+			<Component Subtype="SteelPlate" Count="200" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+			<!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="4" Default="true" />
+			<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+			<MountPoint Side="Left" StartX="3" StartY="0" EndX="4" EndY="1" />
+			<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.2" File="..\1920388300\Models\Large\Static_Cannon_150mm_con1.mwm" />
+			<Model BuildPercentUpperBound="0.5" File="..\1920388300\Models\Large\Static_Cannon_150mm_con2.mwm" />
+			<Model BuildPercentUpperBound="1.0" File="..\1920388300\Models\Large\Static_Cannon_150mm_con3.mwm" />
+		  </BuildProgressModels>
+		  <VoxelPlacement>
+			<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+			<StaticMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0</MinAllowed>
+			</StaticMode>
+			<DynamicMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0.01</MinAllowed>
+			</DynamicMode>
+		  </VoxelPlacement>
+		  <BlockPairName>MK1_Battery</BlockPairName>
+		  <MirroringY>Z</MirroringY>
+		  <MirroringZ>Y</MirroringZ>
+		  <Center x="0" y="0" z="3" />
+		  <EdgeType>Light</EdgeType>
+		  <WeaponDefinitionId Subtype="MK1_Battery" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+		  <DestroySound>WepSmallWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <MinElevationDegrees>0</MinElevationDegrees>
+		  <MaxElevationDegrees>0</MaxElevationDegrees>
+		  <MinAzimuthDegrees>0</MinAzimuthDegrees>
+		  <MaxAzimuthDegrees>0</MaxAzimuthDegrees>
+		  <RotationSpeed>0.0</RotationSpeed>
+		  <ElevationSpeed>0.0</ElevationSpeed>
+		  <DeformationRatio>0.1</DeformationRatio>
+		  <MaxRangeMeters>1000</MaxRangeMeters>
+		  <AiEnabled>false</AiEnabled>
+		  <IdleRotation>false</IdleRotation>
+		  <PCU>225</PCU>
+    </Definition>
+
+	
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+			<SubtypeId>Static30mm</SubtypeId>
+		  </Id>
+		  <DisplayName>MK1 Battery</DisplayName>
+		  <Icon>..\1920388300\textures\icon\Static150mm_icon.dds</Icon>
+		  <Description>MK1 Battery's can be connected with other inventories for automated reloading.
+			
+			Requires 88mm HE Shell Stacks.
+			</Description>
+		  <CubeSize>Small</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="1" y="1" z="4" />
+		  <ModelOffset x="0" y="0" z="0" />
+		  <Model>..\1920388300\Models\Small\Static_Cannon_30mm.mwm</Model>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>45</BuildTimeSeconds>
+		  <InventoryMaxVolume>0.132</InventoryMaxVolume> <!-- Holds 5 Mags on 1x -->
+		  <Components>
+		    <Component Subtype="SteelPlate" Count="500" />
+			<Component Subtype="Construction" Count="40" />
+			<Component Subtype="Motor" Count="250" />
+			<Component Subtype="LargeTube" Count="150" />
+			<Component Subtype="ArmoredPlate" Count="100" />
+			<Component Subtype="AdvancedComputer" Count="180" />
+			<Component Subtype="IronPlate" Count="80" />
+			<Component Subtype="SteelPlate" Count="300" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="4" Default="true" />
+			<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+			<MountPoint Side="Left" StartX="3" StartY="0" EndX="4" EndY="1" />
+			<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.2" File="..\1920388300\Models\Small\Static_Cannon_30mm_con1.mwm" />
+			<Model BuildPercentUpperBound="0.5" File="..\1920388300\Models\Small\Static_Cannon_30mm_con2.mwm" />
+			<Model BuildPercentUpperBound="1.0" File="..\1920388300\Models\Small\Static_Cannon_30mm_con3.mwm" />
+		  </BuildProgressModels>
+		  <BlockPairName>MK1_Battery</BlockPairName>
+		  <MirroringY>Z</MirroringY>
+		  <MirroringZ>Y</MirroringZ>
+		  <Center x="0" y="0" z="3" />
+		  <EdgeType>Light</EdgeType>
+		  <WeaponDefinitionId Subtype="MK1_Battery_Small" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+		  <DestroySound>WepSmallMissileExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <MinElevationDegrees>0</MinElevationDegrees>
+		  <MaxElevationDegrees>0</MaxElevationDegrees>
+		  <MinAzimuthDegrees>0</MinAzimuthDegrees>
+		  <MaxAzimuthDegrees>0</MaxAzimuthDegrees>
+		  <RotationSpeed>0.0</RotationSpeed>
+		  <DeformationRatio>0.1</DeformationRatio>
+		  <ElevationSpeed>0.0</ElevationSpeed>
+		  <MaxRangeMeters>1000</MaxRangeMeters>
+		  <AiEnabled>false</AiEnabled>
+		  <IdleRotation>false</IdleRotation>
+		  <PCU>225</PCU>
+    </Definition>
+
+	</CubeBlocks>
+</Definitions>

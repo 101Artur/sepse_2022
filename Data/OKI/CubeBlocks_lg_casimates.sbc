@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+<!-- =======================================large grid casimates======================================= -->
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKI76mmBSD</SubtypeId>
+			</Id>
+			<DisplayName>OKI Casimate 122mm Assault Gun</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI122mmASG_Casimate.dds</Icon>
+			<Description>Casimate version of the assault gun. Has a 45 degrees cone arc of fire making it a good choice for broadside ships or strike crafts. Deals heavy damage to light armor and moderate damage to heavy armor.</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="2" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Large\122mmBroadside\122mmBroadsideBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="500" />
+				<Component Subtype="Construction" Count="800" />
+				<Component Subtype="LargeTube" Count="200" />
+				<Component Subtype="Motor" Count="200" />
+				<Component Subtype="ArmoredPlate" Count="300" />
+				<Component Subtype="Detector" Count="50" />
+				<Component Subtype="AdvancedComputer" Count="100" />
+				<Component Subtype="IronPlate" Count="600" />
+				<Component Subtype="SteelPlate" Count="700" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+				<MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Large\122mmBroadside\122mmBroadsideBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2481720426\Models\Cubes\Large\122mmBroadside\122mmBroadsideBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Large\122mmBroadside\122mmBroadsideBase_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>OKI76mmBSD</BlockPairName>
+			<StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+			<OperationalPowerConsumption>0.2</OperationalPowerConsumption>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Heavy</EdgeType>
+			<BuildTimeSeconds>40</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKI122mmLargeTurret" />
+			<InventoryMaxVolume>0.720</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-45</MinElevationDegrees>
+			<MaxElevationDegrees>45</MaxElevationDegrees>
+			<MinAzimuthDegrees>-45</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>45</MaxAzimuthDegrees>
+			<RotationSpeed>0.001</RotationSpeed>
+			<ElevationSpeed>0.001</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<AiEnabled>false</AiEnabled>
+			<MaxRangeMeters>800</MaxRangeMeters>
+			<DeformationRatio>0.2</DeformationRatio>
+			<GeneralDamageMultiplier>0.8</GeneralDamageMultiplier>
+			<PCU>400</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKI230mmBCBRD</SubtypeId>
+			</Id>
+			<DisplayName>OKI Casimate 230mm Battlecannon</DisplayName>
+			<Description>Casimate version of the battlecannon. Has a 45 degrees cone arc of fire and slightly better accuracy than turret mounted battlecannon.</Description>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKI230mmBC_Casimate.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="2" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Center x="0" y="1" z="1" />
+			<Model>..\2481720426\Models\Cubes\Large\230mmBroadsideTurret\230mmBroadsideBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="2000" />
+				<Component Subtype="Construction" Count="1200" />
+				<Component Subtype="LargeTube" Count="1050" />
+				<Component Subtype="Motor" Count="540" />
+				<Component Subtype="MetalGrid" Count="240" />
+				<Component Subtype="CompositeArmor" Count="300" />
+				<Component Subtype="LaserEmitter" Count="40" />
+				<Component Subtype="AdvancedComputer" Count="300" />
+				<Component Subtype="IronPlate" Count="600" />
+				<Component Subtype="SteelPlate" Count="1600" />
+			</Components>
+			<CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="2" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="2" />
+				<MountPoint Side="Back" StartX="0" StartY="0.5" EndX="1" EndY="2" />
+				<MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="1.25"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2481720426\Models\Cubes\Large\230mmBroadsideTurret\230mmBroadsideBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2481720426\Models\Cubes\Large\230mmBroadsideTurret\230mmBroadsideBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Large\230mmBroadsideTurret\230mmBroadsideBase_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>OKI230mmBCBRD</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Heavy</EdgeType>
+			<BuildTimeSeconds>45</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKI230mmCapitalTurret" />
+			<InventoryMaxVolume>0.720</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-45</MinElevationDegrees>
+			<MaxElevationDegrees>45</MaxElevationDegrees>
+			<MinAzimuthDegrees>-45</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>45</MaxAzimuthDegrees>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<AiEnabled>false</AiEnabled>
+			<MaxRangeMeters>1500</MaxRangeMeters>
+			<DeformationRatio>0.2</DeformationRatio>
+			<GeneralDamageMultiplier>0.8</GeneralDamageMultiplier>
+			<PCU>525</PCU>
+		</Definition>
+		
+	</CubeBlocks>
+</Definitions>

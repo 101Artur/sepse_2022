@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+<!-- ==================================utility blocks=============================================== -->
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKIObserverSM</SubtypeId>
+			</Id>
+			<DisplayName>OKI Designator Unit</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKIObserverSM.dds</Icon>
+			<Description>Small grid observation unit. Main purpose: rotating camera with zoom. Secondary purpose: target designation for custom turrets or derelict locator at up to 6000m.</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Small\Designator\Designator_Base.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="15" />
+				<Component Subtype="MetalGrid" Count="5" />
+				<Component Subtype="SmallTube" Count="1" />
+				<Component Subtype="Motor" Count="12" />
+				<Component Subtype="Detector" Count="1" />
+				<Component Subtype="Computer" Count="6" />
+				<Component Subtype="Construction" Count="5" />
+				<Component Subtype="SteelPlate" Count="5" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="..\2481720426\Models\Cubes\Small\Designator\Designator_Base_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Small\Designator\Designator_Base_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>OKIDesignator</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>20</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKIObserverWEP" />
+			<InventoryMaxVolume>0.001</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-30</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.003</RotationSpeed>
+			<ElevationSpeed>0.003</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>6000</MaxRangeMeters>
+			<MinFov>0.1</MinFov>
+			<MaxFov>2</MaxFov>
+			<DeformationRatio>0.2</DeformationRatio>
+			<AiEnabled>false</AiEnabled>
+			<PCU>50</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>OKIDesignator</SubtypeId>
+			</Id>
+			<DisplayName>OKI Large Designator Unit</DisplayName>
+			<Icon>..\2481720426\Textures\GUI\Icons\Cubes\OKIDesignator.dds</Icon>
+			<Description>Large grid observation unit. Main purpose: rotating camera with zoom. Secondary purpose: target designation for custom turrets or derelict locator at up to 6000m.</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2481720426\Models\Cubes\Large\Designator\LG_Designator_Base.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="25" />
+				<Component Subtype="Construction" Count="40" />
+				<Component Subtype="MetalGrid" Count="12" />
+				<Component Subtype="SmallTube" Count="5" />
+				<Component Subtype="Motor" Count="12" />
+				<Component Subtype="Detector" Count="6" />
+				<Component Subtype="Computer" Count="24" />
+				<Component Subtype="Construction" Count="15" />
+				<Component Subtype="SteelPlate" Count="15" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.12" StartY="0.12" EndX="0.88" EndY="0.88"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="1.00" File="..\2481720426\Models\Cubes\Large\Designator\LG_Designator_Base_BS1.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>OKIDesignator</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>20</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="OKIObserverWEP" />
+			<InventoryMaxVolume>0.01</InventoryMaxVolume>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<DamageEffectId>213</DamageEffectId>
+			<MinElevationDegrees>-30</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.003</RotationSpeed>
+			<ElevationSpeed>0.003</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>6000</MaxRangeMeters>
+			<MinFov>0.1</MinFov>
+			<MaxFov>2</MaxFov>
+			<DeformationRatio>0.2</DeformationRatio>
+			<AiEnabled>false</AiEnabled>
+			<PCU>50</PCU>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>		

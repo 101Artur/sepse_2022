@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+  
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		
+		  <Id>
+			<TypeId>LargeMissileTurret</TypeId>
+			<SubtypeId>BattleshipCannon</SubtypeId>
+		  </Id>
+		  <DisplayName>Battleship Cannon</DisplayName>
+		  <Icon>..\1920388300\textures\GUI\Icons\CannonMK1_overlay.dds</Icon>
+		  <Description>Battleship Cannons are configurable automated turrets that target anything hostile within its range.
+			
+			Requires 355mm HE Shell Stacks. Can be controlled manually from a cockpit. Use conveyors to allow automatic reloading.
+			</Description>
+		  <CubeSize>Large</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="3" y="2" z="3" />
+		  <Center x="1" y="0" z="1" />
+		  <ModelOffset x="0" y="0" z="0" />
+		  <Model>..\1920388300\Models\Cubes\large\CannonTurretBase.mwm</Model>
+		  <UseModelIntersection>true</UseModelIntersection>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>80</BuildTimeSeconds>
+		  <InventoryMaxVolume>0.639</InventoryMaxVolume> <!-- Hold 6 Mags on 1x -->
+		  <Components>	
+			<Component Subtype="SteelPlate" Count="900" />
+			<Component Subtype="Construction" Count="750" />
+			<Component Subtype="Motor" Count="200" />
+			<Component Subtype="LargeTube" Count="150" />
+			<Component Subtype="ArmoredPlate" Count="800" />
+			<Component Subtype="Detector" Count="50" />
+			<Component Subtype="AdvancedComputer" Count="120" />
+			<Component Subtype="IronPlate" Count="900" />
+			<Component Subtype="SteelPlate" Count="200" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="..\1920388300\Models\Cubes\Large\CannonTurret_Con1.mwm" />
+			<Model BuildPercentUpperBound="0.66" File="..\1920388300\Models\Cubes\Large\CannonTurret_Con2.mwm" />
+			<Model BuildPercentUpperBound="1.00" File="..\1920388300\Models\Cubes\Large\CannonTurret_Con3.mwm" />
+		  </BuildProgressModels>
+		  <VoxelPlacement>
+			<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+			<StaticMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0</MinAllowed>
+			</StaticMode>
+			<DynamicMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0.01</MinAllowed>
+			</DynamicMode>
+		  </VoxelPlacement>
+		  <BlockPairName>BattleshipCannon</BlockPairName>
+		  <BlockVariants>
+			<BlockVariant>
+			  <TypeId>LargeMissileTurret</TypeId>
+			  <SubtypeId>BattleshipCannonMK2</SubtypeId>
+			</BlockVariant>
+			<BlockVariant>
+			  <TypeId>LargeMissileTurret</TypeId>
+			  <SubtypeId>BattleshipCannonMK22</SubtypeId>
+			</BlockVariant>
+			<BlockVariant>
+			  <TypeId>LargeMissileTurret</TypeId>
+			  <SubtypeId>BattleshipCannonMK3</SubtypeId>
+			</BlockVariant> 
+			<!--
+			<BlockVariant>
+			  <TypeId>LargeMissileTurret</TypeId>
+			  <SubtypeId>BattleshipCannonMK3AP</SubtypeId>
+			</BlockVariant>
+			-->
+		  </BlockVariants>
+		  <MirroringY>Z</MirroringY>
+		  <MirroringZ>Y</MirroringZ>
+		  <EdgeType>Light</EdgeType>
+		  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+		  <WeaponDefinitionId Subtype="Mark_1" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Missile</DestroyEffect>
+		  <DestroySound>WepSmallWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <MinElevationDegrees>-5</MinElevationDegrees>
+		  <MaxElevationDegrees>30</MaxElevationDegrees>
+		  <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+		  <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+		  <RotationSpeed>0.0</RotationSpeed>
+		  <ElevationSpeed>0.0</ElevationSpeed>
+		  <MaxRangeMeters>2200</MaxRangeMeters>
+		  <AiEnabled>false</AiEnabled>
+		  <DeformationRatio>0.1</DeformationRatio>
+		  <IdleRotation>false</IdleRotation>
+		  <EmissiveColorPreset>Default</EmissiveColorPreset>
+		  <MinFov>0.1</MinFov>
+		  <MaxFov>1.04719755</MaxFov>
+		  <PCU>400</PCU>
+		  
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

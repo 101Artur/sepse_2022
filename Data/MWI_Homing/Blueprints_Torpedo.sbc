@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints> 
+  
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>TorpedoMk1_Blueprint</SubtypeId>
+      </Id>
+      <DisplayName>Boomer Torpedo Mk1</DisplayName>
+      <Icon>..\1919062467\Textures\GUI\Icons\ammo\M1TorpedoProjectile_Icon.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="2500" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="250" TypeId="Ingot" SubtypeId="Aluminum" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="DepletedUranium" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Titanium" />
+        <Item Amount="1000" TypeId="Ingot" SubtypeId="Magnesium" />
+	<Item Amount="10" TypeId="Component" SubtypeId="AdvancedComputer" />
+	<Item Amount="5" TypeId="Component" SubtypeId="Detector" />
+	<Item Amount="5" TypeId="Component" SubtypeId="LaserEmitter" />
+	<Item Amount="10" TypeId="Component" SubtypeId="LargeTube" />
+	<Item Amount="5" TypeId="Component" SubtypeId="PowerCell" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="TorpedoMk1" />
+      <BaseProductionTimeInSeconds>89.28</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+  </Blueprints>
+</Definitions>

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+  
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+		
+		  <Id>
+			<TypeId>LargeMissileTurret</TypeId>
+			<SubtypeId>HeavyDefenseTurret</SubtypeId>
+		  </Id>
+		  <DisplayName>Heavy Defense Turret</DisplayName>
+		  <Icon>..\1920388300\textures\GUI\Icons\HDT_Icon.dds</Icon>
+		  <Description>Heavy Defense Turrets are configurable automated turrets that target anything hostile within its range.
+			
+			Requires 240mm HE Shell Stacks. Can be controlled manually from a cockpit. Use conveyors to allow automatic reloading.
+			</Description>
+		  <CubeSize>Large</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="3" y="2" z="3" />
+		  <Center x="1" y="0" z="1" />
+		  <ModelOffset x="0" y="0" z="0" />
+		  <Model>..\1920388300\Models\Cubes\large\HDT_Base.mwm</Model>
+		  <UseModelIntersection>true</UseModelIntersection>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>60</BuildTimeSeconds>
+		  <InventoryMaxVolume>3.240</InventoryMaxVolume> <!-- Holds 9 Mags on 1x -->
+		  <Components>
+		    <Component Subtype="SteelPlate" Count="1000" />
+			<Component Subtype="Construction" Count="900" />
+			<Component Subtype="MetalGrid" Count="300" />
+			<Component Subtype="Motor" Count="300" />
+			<Component Subtype="LargeTube" Count="250" />
+			<Component Subtype="ArmoredPlate" Count="910" />
+			<Component Subtype="RadioCommunication" Count="50" />
+			<Component Subtype="Computer" Count="200" />
+			<Component Subtype="IronPlate" Count="400" />
+			<Component Subtype="SteelPlate" Count="200" />
+		  </Components>
+		  <CriticalComponent Subtype="Computer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.4" File="..\1920388300\Models\Cubes\Large\HDT_CON1.mwm" />
+			<Model BuildPercentUpperBound="0.7" File="..\1920388300\Models\Cubes\Large\HDT_CON2.mwm" />
+			<Model BuildPercentUpperBound="1.0" File="..\1920388300\Models\Cubes\Large\HDT_CON3.mwm" />
+		  </BuildProgressModels>
+		  <VoxelPlacement>
+			<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+			<StaticMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0</MinAllowed>
+			</StaticMode>
+			<DynamicMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0.01</MinAllowed>
+			</DynamicMode>
+		  </VoxelPlacement>
+		  <BlockPairName>HeavyDefenseTurret</BlockPairName>
+		  <MirroringY>Z</MirroringY>
+		  <MirroringZ>Y</MirroringZ>
+		  <EdgeType>Light</EdgeType>
+		  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+		  <WeaponDefinitionId Subtype="Heavy_Defense" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Missile</DestroyEffect>
+		  <DestroySound>WepSmallWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <MinElevationDegrees>-20</MinElevationDegrees>
+		  <MaxElevationDegrees>90</MaxElevationDegrees>
+		  <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+		  <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+		  <RotationSpeed>0.000</RotationSpeed>
+		  <ElevationSpeed>0.000 </ElevationSpeed>
+		  <MaxRangeMeters>1500</MaxRangeMeters>
+		  <DeformationRatio>0.1</DeformationRatio>
+		  <AiEnabled>false</AiEnabled>
+		  <IdleRotation>false</IdleRotation>
+		  <EmissiveColorPreset>Default</EmissiveColorPreset>
+		  <MinFov>0.1</MinFov>
+		  <MaxFov>1.04719755</MaxFov>
+		  <PCU>225</PCU>
+		  
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

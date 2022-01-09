@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+  
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>CylinderGasolineTank</SubtypeId>
+      </Id>
+      <DisplayName>Cylinder Gasoline Tank</DisplayName>
+      <Icon>..\2344068716\Icons\CylinderTank.dds</Icon>
+	  <Description>Stores Gasoline. 35,000L capacity.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\GasolineCylinderTank.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="60" />
+        <Component Subtype="LargeTube" Count="30" />
+        <Component Subtype="SmallTube" Count="30" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\CylinderTankConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\CylinderTankConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\CylinderTankConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>35000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>Gasoline</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>CylinderRocketFuelTank</SubtypeId>
+      </Id>
+      <DisplayName>Cylinder Rocket Fuel Tank</DisplayName>
+	  <Description>Stores Rocket Fuel. 35,000L capacity.</Description>
+      <Icon>..\2344068716\Icons\CylinderTank.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\RocketFuelCylinderTank.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="60" />
+        <Component Subtype="LargeTube" Count="30" />
+        <Component Subtype="SmallTube" Count="30" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\CylinderTankConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\CylinderTankConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\CylinderTankConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>35000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>RocketFuel</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>EnclosedGasolineTank</SubtypeId>
+      </Id>
+      <DisplayName>Enclosed Gasoline Tank</DisplayName>
+      <Icon>..\2344068716\Icons\EnclosedTank.dds</Icon>
+	  <Description>Stores Gasoline. 22,000L capacity.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\EnclosedGasolineTank.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="LargeTube" Count="20" />
+        <Component Subtype="SmallTube" Count="30" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\EnclosedTankConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\EnclosedTankConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\EnclosedTankConstruct3.mwm" />
+      </BuildProgressModels>
+	  <BlockPairName>EnclosedGasolineTank</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>22000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>Gasoline</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>EnclosedRocketFuelTank</SubtypeId>
+      </Id>
+      <DisplayName>Enclosed Rocket Fuel Tank</DisplayName>
+      <Icon>..\2344068716\Icons\EnclosedTank.dds</Icon>
+	  <Description>Stores Rocket Fuel. 22,000L capacity.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\EnclosedRocketFuelTank.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="LargeTube" Count="20" />
+        <Component Subtype="SmallTube" Count="30" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\EnclosedTankConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\EnclosedTankConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\EnclosedTankConstruct3.mwm" />
+      </BuildProgressModels>
+	  <BlockPairName>EnclosedRocketTank</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>22000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>RocketFuel</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>
+ 	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>LargeGasolineTank</SubtypeId>
+      </Id>
+      <DisplayName>Gasoline Tank</DisplayName>
+      <Icon>..\2344068716\Icons\SphereTankLegs.dds</Icon>
+	  <Description>Stores Gasoline. 1,500,000L capacity.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\LargeGasolineTank.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="160" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="SmallTube" Count="60" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="120" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Right" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Left" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Back" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\LargeRocketFuelTankConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\LargeRocketFuelTankConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\LargeRocketFuelTankConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>1500000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>Gasoline</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>LargeGasolineTankNoLegs</SubtypeId>
+      </Id>
+      <DisplayName>Gasoline Tank - No Legs</DisplayName>
+      <Icon>..\2344068716\Icons\SphereTankNoLegs.dds</Icon>
+	  <Description>Stores Gasoline. 1,500,000L capacity.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\LargeGasolineTankNoLegs.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="160" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="SmallTube" Count="60" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="120" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Bottom" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Right" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Left" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Back" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\LargeRocketFuelTankNoLegsConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\LargeRocketFuelTankNoLegsConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\LargeRocketFuelTankNoLegsConstruct3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>GasolineTank</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>1500000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>Gasoline</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>SmallGasolineTank</SubtypeId>
+      </Id>
+      <DisplayName>Gasoline Tank</DisplayName>
+      <Icon>..\2344068716\Icons\SphereTankNoLegs.dds</Icon>
+	  <Description>Stores Gasoline. 15,000L capacity.</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\SmallGasolineTank.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="LargeTube" Count="25" />
+        <Component Subtype="SmallTube" Count="30" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Bottom" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Right" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Left" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Back" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\SmallRocketFuelTankConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\SmallRocketFuelTankConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\SmallRocketFuelTankConstruct3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>GasolineTank</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>15000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>Gasoline</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>	
+	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>LargeRocketFuelTank</SubtypeId>
+      </Id>
+      <DisplayName>Rocket Fuel Tank</DisplayName>
+      <Icon>..\2344068716\Icons\SphereTankLegs.dds</Icon>
+	  <Description>Stores Rocket Fuel. 1,500,000L capacity.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\LargeRocketFuelTank.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="160" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="SmallTube" Count="60" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="120" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Right" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Left" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Back" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\LargeRocketFuelTankConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\LargeRocketFuelTankConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\LargeRocketFuelTankConstruct3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>1500000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>RocketFuel</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>	
+	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>LargeRocketFuelTankNoLegs</SubtypeId>
+      </Id>
+      <DisplayName>Rocket Fuel Tank - No Legs</DisplayName>
+      <Icon>..\2344068716\Icons\SphereTankNoLegs.dds</Icon>
+	  <Description>Stores Rocket Fuel. 1,500,000L capacity.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\LargeRocketFuelTankNoLegs.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="160" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="SmallTube" Count="60" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="120" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Bottom" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Right" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Left" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Back" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\LargeRocketFuelTankNoLegsConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\LargeRocketFuelTankNoLegsConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\LargeRocketFuelTankNoLegsConstruct3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>RocketFuelTank</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>1500000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>RocketFuel</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>25</PCU>      
+    </Definition>
+	
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+      <Id>
+        <TypeId>OxygenTank</TypeId>
+        <SubtypeId>SmallRocketFuelTank</SubtypeId>
+      </Id>
+      <DisplayName>Rocket Fuel Tank</DisplayName>
+      <Icon>..\2344068716\Icons\SphereTankNoLegs.dds</Icon>
+	  <Description>Stores Rocket Fuel. 15,000L capacity.</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>..\2344068716\Models\SmallRocketFuelTank.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="LargeTube" Count="25" />
+        <Component Subtype="SmallTube" Count="30" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Bottom" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Right" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Left" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+        <MountPoint Side="Back" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\SmallRocketFuelTankConstruct1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\SmallRocketFuelTankConstruct2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2344068716\Models\Construct\SmallRocketFuelTankConstruct3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>RocketFuelTank</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+      <ResourceSinkGroup>Factory</ResourceSinkGroup>
+      <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+      <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+      <Capacity>15000</Capacity>
+      <InventoryMaxVolume>0.75</InventoryMaxVolume>
+      <InventorySize>
+        <X>2</X>
+        <Y>2</Y>
+        <Z>2</Z>
+      </InventorySize>
+      <StoredGasId>
+        <TypeId>GasProperties</TypeId>
+        <SubtypeId>RocketFuel</SubtypeId>
+      </StoredGasId>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>25</PCU>  
+	  
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

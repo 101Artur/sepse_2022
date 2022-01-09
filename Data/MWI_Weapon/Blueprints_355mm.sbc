@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>   
+  
+  
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>HEShell355mm_Blueprint</SubtypeId>
+      </Id>
+      <DisplayName>355mm HE Shell Stack</DisplayName>
+      <Icon>..\1920388300\textures\icon\150mmAmmo_icon.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="350" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="90" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="110" TypeId="Ingot" SubtypeId="Magnesium" />
+	<Item Amount="550" TypeId="Ingot" SubtypeId="Copper" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="HEShell355mm" />
+      <BaseProductionTimeInSeconds>17.75</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+	
+  </Blueprints>
+</Definitions>

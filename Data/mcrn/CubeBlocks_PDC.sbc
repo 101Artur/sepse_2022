@@ -1,0 +1,592 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<BlockVariantGroups>
+
+		<!-- MCRN Weapons -->
+
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MCRNGroup2" />
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\RetractPDC.dds</Icon>
+			<DisplayName>DisplayName_BlockGroup_MCRNWeapons</DisplayName>
+			<Description>MCRN Weaponry.</Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRightRetractPDC" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNLeftRetractPDC" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNTopRetractPDC" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRightRetractPDCSB" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNLeftRetractPDCSB" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNTopRetractPDCSB" />
+				<Block Type="MyObjectBuilder_LargeGatlingTurret" Subtype="MCRNPDCTurretLB" />
+				<Block Type="MyObjectBuilder_LargeGatlingTurret" Subtype="MCRNPDCTurretSB" />
+			</Blocks>
+		</BlockVariantGroup>
+
+	</BlockVariantGroups>
+	<BlockPositions>
+		<BlockPosition>
+			<Name>PDCTurrets</Name>
+			<Position>
+				<X>9</X>
+				<Y>9</Y>
+			</Position>
+		</BlockPosition>
+	</BlockPositions>
+
+	<!-- Research Blocks -->
+	<ResearchBlocks> 
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LargeGatlingTurret" Subtype="MCRNPDCTurretLB" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_LargeGatlingTurret" Subtype="MCRNPDCTurretSB" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRightRetractPDC" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNLeftRetractPDC" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNTopRetractPDC" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRightRetractPDCSB" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNLeftRetractPDCSB" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+		<ResearchBlock xsi:type="ResearchBlock">
+			<Id Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNTopRetractPDCSB" />
+			<UnlockedByGroups>
+				<GroupSubtype>4</GroupSubtype>
+			</UnlockedByGroups>
+		</ResearchBlock>
+	</ResearchBlocks>  
+
+
+
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeGatlingTurret</TypeId>
+				<SubtypeId>MCRNPDCTurretLB</SubtypeId>
+			</Id>
+			<DisplayName>MCRN PDC</DisplayName>
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\PDC_turret.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2036872575\Models\Cubes\PDCTurretLB.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="200" />
+				<Component Subtype="Construction" Count="150" />
+				<Component Subtype="MetalGrid" Count="40" />
+				<Component Subtype="LargeTube" Count="45" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="RadioCommunication" Count="10" />				
+				<Component Subtype="Computer" Count="150" />
+				<Component Subtype="IronPlate" Count="120" />				
+				<Component Subtype="SteelPlate" Count="200" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2036872575\Models\Cubes\PDCTurretLB_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2036872575\Models\Cubes\PDCTurretLB_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2036872575\Models\Cubes\PDCTurretLB_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>PDCTurrets</BlockPairName>
+			<Description>Point Defense Cannon with faster rotations, capability of firing depleted uranium rounds and standard gatling ammo.</Description>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="PDCTurret" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<MinElevationDegrees>-9</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.006</RotationSpeed>
+			<ElevationSpeed>0.006</ElevationSpeed>
+			<IdlePower>.1</IdlePower>
+			<UsePower>10</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>1200</MaxRangeMeters>
+			<PCU>225</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeGatlingTurret</TypeId>
+				<SubtypeId>MCRNPDCTurretSB</SubtypeId>
+			</Id>
+			<DisplayName>MCRN PDC</DisplayName>
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\PDC_turret.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="5" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2036872575\Models\Cubes\PDCTurretLB.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="200" />
+				<Component Subtype="Construction" Count="150" />
+				<Component Subtype="MetalGrid" Count="40" />
+				<Component Subtype="LargeTube" Count="45" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="RadioCommunication" Count="10" />				
+				<Component Subtype="Computer" Count="150" />
+				<Component Subtype="IronPlate" Count="120" />				
+				<Component Subtype="SteelPlate" Count="200" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="1" StartY="1" EndX="4" EndY="4" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2036872575\Models\Cubes\PDCTurretLB_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2036872575\Models\Cubes\PDCTurretLB_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2036872575\Models\Cubes\PDCTurretLB_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>PDCTurrets</BlockPairName>
+			<Description>Point Defense Cannon with faster rotations, capability of firing depleted uranium rounds and standard gatling ammo.</Description>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="PDCTurret" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<MinElevationDegrees>-9</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.005</RotationSpeed>
+			<ElevationSpeed>0.004</ElevationSpeed>
+			<IdlePower>1</IdlePower>
+			<UsePower>10</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>800</MaxRangeMeters>
+		<PCU>225</PCU>
+		</Definition>
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition"> 
+	 		<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MCRNRightRetractPDC</SubtypeId>
+			</Id>
+			<DisplayName>MCRN Right PDC Retractable</DisplayName>
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\RetractPDC.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2036872575\Models\Cubes\RetractPDCBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="200" />
+				<Component Subtype="Construction" Count="150" />
+				<Component Subtype="MetalGrid" Count="40" />
+				<Component Subtype="LargeTube" Count="45" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="RadioCommunication" Count="10" />				
+				<Component Subtype="Computer" Count="150" />
+				<Component Subtype="IronPlate" Count="120" />				
+				<Component Subtype="SteelPlate" Count="300" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+				<MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2036872575\Models\Cubes\RetractPDCBase_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2036872575\Models\Cubes\RetractPDCBase_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2036872575\Models\Cubes\RetractPDCBase_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>RetractPDCTurret</BlockPairName>
+			<Description>Just like the other PDC, but this one can retract into ship hull.</Description>
+	  		<MirroringBlock>MCRNLeftRetractPDC</MirroringBlock>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="PDCTurret" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<MinElevationDegrees>-9</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.006</RotationSpeed>
+			<ElevationSpeed>0.006</ElevationSpeed>
+			<IdlePower>.1</IdlePower>
+			<UsePower>10</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>1200</MaxRangeMeters>
+			<PCU>225</PCU>
+		</Definition>
+
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition"> 
+	 		<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MCRNLeftRetractPDC</SubtypeId>
+			</Id>
+			<DisplayName>MCRN Left PDC Retractable</DisplayName>
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\RetractPDC.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2036872575\Models\Cubes\LeftRetractPDCBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="200" />
+				<Component Subtype="Construction" Count="150" />
+				<Component Subtype="MetalGrid" Count="40" />
+				<Component Subtype="LargeTube" Count="45" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="RadioCommunication" Count="10" />				
+				<Component Subtype="Computer" Count="150" />
+				<Component Subtype="IronPlate" Count="120" />				
+				<Component Subtype="SteelPlate" Count="300" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+				<MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2036872575\Models\Cubes\LeftRetractPDCBase_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2036872575\Models\Cubes\LeftRetractPDCBase_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2036872575\Models\Cubes\LeftRetractPDCBase_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>RetractPDCTurret2</BlockPairName>
+			<Description>Just like the other PDC, but this one can retract into ship hull.</Description>
+	  		<MirroringBlock>MCRNRightRetractPDC</MirroringBlock>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="PDCTurret" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<MinElevationDegrees>-9</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.006</RotationSpeed>
+			<ElevationSpeed>0.006</ElevationSpeed>
+			<IdlePower>.1</IdlePower>
+			<UsePower>10</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>1200</MaxRangeMeters>
+			<PCU>225</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition"> 
+	 		<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MCRNTopRetractPDC</SubtypeId>
+			</Id>
+			<DisplayName>MCRN Top PDC Retractable</DisplayName>
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\RetractPDC.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2036872575\Models\Cubes\TopRetractPDCBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="200" />	
+				<Component Subtype="Construction" Count="150" />
+				<Component Subtype="MetalGrid" Count="40" />
+				<Component Subtype="LargeTube" Count="45" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="RadioCommunication" Count="10" />				
+				<Component Subtype="Computer" Count="150" />
+				<Component Subtype="IronPlate" Count="120" />				
+				<Component Subtype="SteelPlate" Count="300" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+				<MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2036872575\Models\Cubes\RetractPDCBase_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2036872575\Models\Cubes\RetractPDCBase_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2036872575\Models\Cubes\RetractPDCBase_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>TopRetractPDCTurret</BlockPairName>
+			<Description>Just like the other PDC, but this one can retract into ship hull.</Description>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="PDCTurret" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<MinElevationDegrees>-9</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.006</RotationSpeed>
+			<ElevationSpeed>0.006</ElevationSpeed>
+			<IdlePower>.1</IdlePower>
+			<UsePower>10</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>1200</MaxRangeMeters>
+			<PCU>225</PCU>
+		</Definition>
+ 
+
+
+		<!-- Small Block Variant -->
+				<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition"> 
+	 		<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MCRNRightRetractPDCSB</SubtypeId>
+			</Id>
+			<DisplayName>MCRN Right PDC Retractable</DisplayName>
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\RetractPDC.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="10" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2036872575\Models\Cubes\RetractPDCBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="200" />
+				<Component Subtype="Construction" Count="150" />
+				<Component Subtype="MetalGrid" Count="40" />
+				<Component Subtype="LargeTube" Count="45" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="RadioCommunication" Count="10" />				
+				<Component Subtype="Computer" Count="150" />
+				<Component Subtype="IronPlate" Count="120" />				
+				<Component Subtype="SteelPlate" Count="300" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+				<MountPoint Side="Left" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="5" EndY="5" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2036872575\Models\Cubes\RetractPDCBase_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2036872575\Models\Cubes\RetractPDCBase_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2036872575\Models\Cubes\RetractPDCBase_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>RetractPDCTurret</BlockPairName>
+			<Description>Just like the other PDC, but this one can retract into ship hull.</Description>
+	  		<MirroringBlock>MCRNLeftRetractPDCSB</MirroringBlock>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="PDCTurret" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<MinElevationDegrees>-9</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.006</RotationSpeed>
+			<ElevationSpeed>0.006</ElevationSpeed>
+			<IdlePower>.1</IdlePower>
+			<UsePower>10</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>1200</MaxRangeMeters>
+			<PCU>225</PCU>
+		</Definition>
+
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition"> 
+	 		<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MCRNLeftRetractPDCSB</SubtypeId>
+			</Id>
+			<DisplayName>MCRN Left PDC Retractable</DisplayName>
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\RetractPDC.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="10" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2036872575\Models\Cubes\LeftRetractPDCBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="200" />
+				<Component Subtype="Construction" Count="150" />
+				<Component Subtype="MetalGrid" Count="40" />
+				<Component Subtype="LargeTube" Count="45" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="RadioCommunication" Count="10" />				
+				<Component Subtype="Computer" Count="150" />
+				<Component Subtype="IronPlate" Count="120" />				
+				<Component Subtype="SteelPlate" Count="300" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+				<MountPoint Side="Left" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="5" EndY="5" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2036872575\Models\Cubes\LeftRetractPDCBase_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2036872575\Models\Cubes\LeftRetractPDCBase_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2036872575\Models\Cubes\LeftRetractPDCBase_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>RetractPDCTurret2</BlockPairName>
+			<Description>Just like the other PDC, but this one can retract into ship hull.</Description>
+	  		<MirroringBlock>MCRNRightRetractPDCSB</MirroringBlock>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="PDCTurret" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<MinElevationDegrees>-9</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.006</RotationSpeed>
+			<ElevationSpeed>0.006</ElevationSpeed>
+			<IdlePower>.1</IdlePower>
+			<UsePower>10</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>1200</MaxRangeMeters>
+			<PCU>225</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition"> 
+	 		<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MCRNTopRetractPDCSB</SubtypeId>
+			</Id>
+			<DisplayName>MCRN Top PDC Retractable</DisplayName>
+			<Icon>..\2036872575\Textures\GUI\Icons\Cubes\RetractPDC.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="10" z="5" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>..\2036872575\Models\Cubes\TopRetractPDCBase.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="200" />
+				<Component Subtype="Construction" Count="150" />
+				<Component Subtype="MetalGrid" Count="40" />
+				<Component Subtype="LargeTube" Count="45" />
+				<Component Subtype="Motor" Count="50" />
+				<Component Subtype="RadioCommunication" Count="10" />				
+				<Component Subtype="Computer" Count="150" />
+				<Component Subtype="IronPlate" Count="120" />				
+				<Component Subtype="SteelPlate" Count="300" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+				<MountPoint Side="Left" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Right" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="5" />
+				<MountPoint Side="Back" StartX="0" StartY="0" EndX="5" EndY="5" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2036872575\Models\Cubes\TopRetractPDCBase_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="..\2036872575\Models\Cubes\TopRetractPDCBase_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="..\2036872575\Models\Cubes\TopRetractPDCBase_BS3.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>TopRetractPDCTurret</BlockPairName>
+			<Description>Just like the other PDC, but this one can retract into ship hull.</Description>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<EmissiveColorPreset>Extended</EmissiveColorPreset>
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="PDCTurret" />
+			<InventoryMaxVolume>0.384</InventoryMaxVolume>
+			<MinElevationDegrees>-9</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<RotationSpeed>0.006</RotationSpeed>
+			<ElevationSpeed>0.006</ElevationSpeed>
+			<IdlePower>.1</IdlePower>
+			<UsePower>10</UsePower>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MaxRangeMeters>1200</MaxRangeMeters>
+			<PCU>225</PCU>
+		</Definition>
+
+
+
+	</CubeBlocks>
+	<BlueprintClassEntries>
+		<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeGatlingTurret/PDCTurretLB" />
+		<Entry Class="SmallBlocks" BlueprintSubtypeId="LargeGatlingTurret/PDCTurretSB" />
+		<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNRightRetractPDCSB" />
+		<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNLeftRetractPDCSB" />
+		<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNTopRetractPDCSB" />
+		<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNRightRetractPDC" />
+		<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNLeftRetractPDC" />
+		<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNTopRetractPDC" />
+		<Entry Class="Ammo" BlueprintSubtypeId="DeU_25x184mm" />
+	</BlueprintClassEntries>
+</Definitions>

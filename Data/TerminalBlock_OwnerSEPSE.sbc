@@ -1,0 +1,60 @@
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>OwnerSEPSE.Small</SubtypeId>
+      </Id>
+	  <Public>true</Public>
+      <DisplayName>OwnerSEPSE</DisplayName>
+      <Icon>Textures\Sensor.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Small\Sensor.mwm</Model>
+      <Components>
+			<Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+   <BlockPairName>OwnerSEPSE</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+  
+       </Definition> 
+
+	      <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>OwnerSEPSE.Large</SubtypeId>
+      </Id>
+	  <Public>true</Public> 
+      <DisplayName>OwnerSEPSE</DisplayName>
+      <Icon>Textures\Sensor.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Large\Sensor.mwm</Model>
+      <Components>
+			<Component Subtype="SteelPlate" Count="40" />
+
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+   <BlockPairName>OwnerSEPSE</BlockPairName>
+   <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+	
+       </Definition>
+	   
+  </CubeBlocks>
+  <BlockPositions>
+    <BlockPosition>
+      <Name>OwnerSEPSE</Name>
+      <Position>
+        <X>-3</X>
+        <Y>-3</Y>
+      </Position>
+    </BlockPosition>
+  </BlockPositions>
+</Definitions>

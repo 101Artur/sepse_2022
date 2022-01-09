@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<CubeBlocks>
+
+<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+			<SubtypeId>Railgunx150f</SubtypeId>
+		  </Id>
+      <DisplayName>Railgun150mm</DisplayName>
+      <Icon>..\2016817336\Textures\icons\Railgunf150icon.png</Icon>
+	  <Description>150mm Fixed Railgun. 2500m/s projectile speed.</Description>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>true</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="22" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="1" y="1" z="21" />      
+      <Model>..\2016817336\Models\Railgun150.mwm</Model>
+	  <UseModelIntersection>true</UseModelIntersection>	  
+	  <BuildProgressModels>
+		<Model BuildPercentUpperBound="0.33" File="..\2016817336\Models\Railgun150_BS1.mwm"/>
+		<Model BuildPercentUpperBound="0.66" File="..\2016817336\Models\Railgun150_BS2.mwm"/>
+		<Model BuildPercentUpperBound="1.0" File="..\2016817336\Models\Railgun150_BS3.mwm"/>
+	  </BuildProgressModels>
+           <VoxelPlacement>
+             <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+            <StaticMode>
+            <PlacementMode>OutsideVoxel</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0</MinAllowed>
+            </StaticMode>
+            <DynamicMode>
+            <PlacementMode>OutsideVoxel</PlacementMode>
+            <MaxAllowed>0.2</MaxAllowed>
+            <MinAllowed>0.01</MinAllowed>
+            </DynamicMode>
+           </VoxelPlacement>	  
+      <Components>
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="Construction" Count="80" />
+        <Component Subtype="Motor" Count="60" />
+        <Component Subtype="LargeTube" Count="30" />
+        <Component Subtype="CompositeArmor" Count="100" />
+        <Component Subtype="Superconductor" Count="100" />
+		    <Component Subtype="Cryocooler" Count="20" />		
+        <Component Subtype="AdvancedComputer" Count="40" />
+        <Component Subtype="IronPlate" Count="120" />
+		    <Component Subtype="SteelPlate" Count="150" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+      <BlockPairName>Railgunx150f</BlockPairName>
+      <EdgeType>Light</EdgeType>
+	  <WeaponDefinitionId Subtype="Railgunx150f" />
+	  <InventoryMaxVolume>0.031</InventoryMaxVolume>
+      <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+      <DisassembleRatio>5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>400</PCU>
+      <IsAirTight>false</IsAirTight> 	  
+    </Definition>	
+	
+	
+  </CubeBlocks>
+</Definitions>

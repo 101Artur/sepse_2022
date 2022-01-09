@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_JumpDriveDefinition">
+      <Id>
+        <TypeId>JumpDrive</TypeId>
+        <SubtypeId>LargeJumpDrive</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_JumpDrive</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\JumpDrive.dds</Icon>
+      <Description>Description_JumpDrive</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\JumpDrive.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="400" />
+        <Component Subtype="MetalGrid" Count="500" />
+        <Component Subtype="GravityGenerator" Count="200" />
+        <Component Subtype="Detector" Count="200" />
+        <Component Subtype="PowerCell" Count="120" />
+        <Component Subtype="Superconductor" Count="10000" />
+        <Component Subtype="Computer" Count="3000" />
+        <Component Subtype="Construction" Count="400" />
+        <Component Subtype="IronPlate" Count="10000" />
+        <Component Subtype="SteelPlate" Count="10000" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="3" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\JumpDriveConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\JumpDriveConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\JumpDriveConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>JumpDrive</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>600</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+
+      <ResourceSinkGroup>Charging</ResourceSinkGroup>
+      <RequiredPowerInput>64</RequiredPowerInput>
+      <!--<PowerNeededForJump>30</PowerNeededForJump>-->
+      <PowerNeededForJump>1</PowerNeededForJump>
+
+      <MaxJumpDistance>5000000</MaxJumpDistance>
+      <MaxJumpMass>9000000</MaxJumpMass>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+      <IsAirTight>true</IsAirTight>      
+    </Definition> 
+    <Definition>
+      <Id>
+        <TypeId>Decoy</TypeId>
+        <SubtypeId>LargeDecoy</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_Decoy</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\decoy.dds</Icon>
+      <Description>Description_Decoy</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\decoy.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="RadioCommunication" Count="1" />
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="IronPlate" Count="100" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="RadioCommunication" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Right" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Left" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Top" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\DecoyConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\DecoyConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\DecoyConstruction_3.mwm" />
+      </BuildProgressModels>
+      <Public>true</Public>
+      <BlockPairName>Decoy</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>16</BuildTimeSeconds>
+      <!--<UseModelIntersection>true</UseModelIntersection>-->
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>50</PCU>
+      <IsAirTight>false</IsAirTight>      
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>Decoy</TypeId>
+        <SubtypeId>SmallDecoy</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_Decoy</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\decoy.dds</Icon>
+      <Description>Description_Decoy</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\decoy.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="RadioCommunication" Count="1" />
+        <Component Subtype="SmallTube" Count="2" />
+        <Component Subtype="IronPlate" Count="5" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="RadioCommunication" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\DecoyConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\DecoyConstruction_2.mwm" />
+      </BuildProgressModels>
+      <Public>true</Public>
+      <BlockPairName>Decoy</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <UseModelIntersection>true</UseModelIntersection>
+      <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>50</PCU>
+      <IsAirTight>false</IsAirTight>      
+    </Definition>
+
+
+
+
+
+
+
+
+
+
+
+
+    <Definition xsi:type="MyObjectBuilder_WarheadDefinition">
+      <Id>
+        <TypeId>Warhead</TypeId>
+        <SubtypeId>LargeWarhead</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_Warhead</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\warhead.dds</Icon>
+      <Description>Description_Warhead</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\warhead.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="Girder" Count="120" />
+        <Component Subtype="Construction" Count="60" />
+        <Component Subtype="SmallTube" Count="60" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="Explosives" Count="100" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="Explosives" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Back" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Right" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Left" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
+        <MountPoint Side="Top" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\WarheadConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\WarheadConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WarheadConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Warhead</BlockPairName>
+      <ActionSound>WepLrgWarheadExpl</ActionSound>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <ExplosionRadius>22.4415</ExplosionRadius>
+      <WarheadExplosionDamage>15000</WarheadExplosionDamage>
+      <EmissiveColorPreset>Timer</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>
+      <IsAirTight>false</IsAirTight>      
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_WarheadDefinition">
+      <Id>
+        <TypeId>Warhead</TypeId>
+        <SubtypeId>SmallWarhead</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_Warhead</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\warhead.dds</Icon>
+      <Description>Description_Warhead</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\warhead.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Girder" Count="5" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SmallTube" Count="10" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="Explosives" Count="30" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Explosives" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\WarheadConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\WarheadConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Warhead</BlockPairName>
+      <ActionSound>WepLrgWarheadExpl</ActionSound>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <ExplosionRadius> 4.4883 </ExplosionRadius>
+      <WarheadExplosionDamage>15000</WarheadExplosionDamage>
+      <EmissiveColorPreset>Timer</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>50</PCU>
+      <IsAirTight>false</IsAirTight>      
+    </Definition>
+
+
+
+  </CubeBlocks>
+</Definitions>

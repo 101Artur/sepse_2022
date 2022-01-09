@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+	
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+			<SubtypeId>StaticBattery1</SubtypeId>
+		  </Id>
+		  <DisplayName>Telion Dual Battery</DisplayName>
+		  <Icon>..\1920388300\textures\GUI\Icons\TelionDual_icon.dds</Icon>
+		  <Description>Telion Dual Battery's can be connected with other inventories for automated reloading.
+			
+			Requires 420mm HE Shell Stacks.
+			</Description>
+		  <CubeSize>Large</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="2" y="2" z="6" />
+		  <ModelOffset x="0" y="0" z="2.5" />
+		  <Model>..\1920388300\Models\Cubes\Large\TelionDualBattery.mwm</Model>
+		  
+
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>140</BuildTimeSeconds>
+		  <InventoryMaxVolume>2.016</InventoryMaxVolume> <!-- Holds 8 Mags on 1x -->
+		  <Components>
+			<Component Subtype="SteelPlate" Count="1000" />
+			<Component Subtype="Construction" Count="450" />
+			<Component Subtype="MetalGrid" Count="25" />
+			<Component Subtype="Motor" Count="250" />
+			<Component Subtype="LargeTube" Count="380" />
+			<Component Subtype="ArmoredPlate" Count="150" />
+			<Component Subtype="AdvancedComputer" Count="175" />
+			<Component Subtype="IronPlate" Count="800" />
+			<Component Subtype="SteelPlate" Count="500" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+			
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="6" Default="true" />
+			<MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="1" />
+			<MountPoint Side="Left" StartX="2" StartY="0" EndX="6" EndY="1" />
+			<MountPoint Side="Right" StartX="0" StartY="0" EndX="4" EndY="1" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.2" File="..\1920388300\Models\Cubes\Large\TelionDualBattery_con1.mwm" />
+			<Model BuildPercentUpperBound="0.5" File="..\1920388300\Models\Cubes\Large\TelionDualBattery_con2.mwm" />
+			<Model BuildPercentUpperBound="0.8" File="..\1920388300\Models\Cubes\Large\TelionDualBattery_con3.mwm" />
+			<Model BuildPercentUpperBound="1.0" File="..\1920388300\Models\Cubes\Large\TelionDualBattery_con4.mwm" />
+		  </BuildProgressModels>
+		  <VoxelPlacement>
+			<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+			<StaticMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0</MinAllowed>
+			</StaticMode>
+			<DynamicMode>
+			  <PlacementMode>OutsideVoxel</PlacementMode>
+			  <MaxAllowed>0.2</MaxAllowed>
+			  <MinAllowed>0.01</MinAllowed>
+			</DynamicMode>
+		  </VoxelPlacement>
+		  <BlockPairName>TelionBattery1</BlockPairName>
+		  <BlockVariants>
+			<BlockVariant>
+			  <TypeId>LargeMissileTurret</TypeId>
+			  <SubtypeId>StaticBattery1Stack</SubtypeId>
+			</BlockVariant>  
+			<BlockVariant>
+			  <TypeId>LargeMissileTurret</TypeId>
+			  <SubtypeId>StaticBattery2</SubtypeId>
+			</BlockVariant>  		
+		  </BlockVariants>
+		  <MirroringY>ZThenOffsetX</MirroringY>
+		  <MirroringZ>YThenOffsetX</MirroringZ>
+		  <Center x="0" y="0" z="5" />
+		  <EdgeType>Light</EdgeType>
+		  <WeaponDefinitionId Subtype="BatteryCannon1" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+		  <DestroySound>WepSmallWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <PCU>275</PCU>
+    </Definition>
+
+
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+			<SubtypeId>StaticBattery1Stack</SubtypeId>
+		  </Id>
+		  <DisplayName>Telion Dual Battery - Stacked</DisplayName>
+		  <Icon>..\1920388300\textures\GUI\Icons\TelionDual_icon.dds</Icon>
+		  <Description>Telion Dual Battery's can be connected with other inventories for automated reloading.
+			
+			Requires 420mm HE Shell Stacks.
+			</Description>
+		  <GuiVisible>false</GuiVisible>
+		  <CubeSize>Large</CubeSize>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="2" y="1" z="6" />
+		  <ModelOffset x="0" y="0" z="2.5" />
+		  <Model>..\1920388300\Models\Cubes\Large\TelionDualStack.mwm</Model>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>140</BuildTimeSeconds>
+		  <InventoryMaxVolume>2.016</InventoryMaxVolume> <!-- Holds 8 Mags on 1x -->
+		  <Components>
+		    <Component Subtype="SteelPlate" Count="1000" />
+			<Component Subtype="Construction" Count="450" />
+			<Component Subtype="MetalGrid" Count="25" />
+			<Component Subtype="Motor" Count="250" />
+			<Component Subtype="LargeTube" Count="380" />
+			<Component Subtype="ArmoredPlate" Count="150" />
+			<Component Subtype="AdvancedComputer" Count="175" />
+			<Component Subtype="IronPlate" Count="800" />
+			<Component Subtype="SteelPlate" Count="500" />
+		  </Components>
+		  <CriticalComponent Subtype="AdvancedComputer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="6" Default="true" />
+			<MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="1" />
+			<MountPoint Side="Left" StartX="2" StartY="0" EndX="6" EndY="1" />
+			<MountPoint Side="Right" StartX="0" StartY="0" EndX="4" EndY="1" />
+			<MountPoint Side="Top" StartX="0" StartY="3" EndX="2" EndY="6" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.3" File="..\1920388300\Models\Cubes\Large\TelionDualStack_con1.mwm" />
+			<Model BuildPercentUpperBound="0.6" File="..\1920388300\Models\Cubes\Large\TelionDualStack_con2.mwm" />
+			<Model BuildPercentUpperBound="1.0" File="..\1920388300\Models\Cubes\Large\TelionDualStack_con3.mwm" />
+		  </BuildProgressModels>
+		  <BlockPairName>TelionBattery1Stack</BlockPairName>
+		  <MirroringY>ZThenOffsetX</MirroringY>
+		  <MirroringZ>YThenOffsetX</MirroringZ>
+		  <Center x="0" y="0" z="5" />
+		  <EdgeType>Light</EdgeType>
+		  <WeaponDefinitionId Subtype="BatteryCannon1" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Warhead_15</DestroyEffect>
+		  <DestroySound>WepSmallWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+		  <PCU>275</PCU>
+    </Definition>
+
+
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncher</TypeId>
+			<SubtypeId>StaticBattery2</SubtypeId>
+		  </Id>
+		  <DisplayName>Telion Octa Battery</DisplayName>
+		  <Icon>..\1920388300\textures\GUI\Icons\TelionOcta_icon.dds</Icon>
+		  <Description>Telion Octa Battery's can be connected with other inventories for automated reloading.
+			
+			Requires 420mm HE Shell Stacks.
+			(non-WC)
+			</Description>
+		  <GuiVisible>false</GuiVisible>
+		  <CubeSize>Large</CubeSize>
+		  <Public>false</Public>
+		  <BlockTopology>TriangleMesh</BlockTopology>
+		  <Size x="8" y="2" z="6" />
+		  <ModelOffset x="0" y="0" z="2.5" />
+		  <Model>..\1920388300\Models\Cubes\Large\TelionOctaBattery.mwm</Model>
+		  
+		  
+			<!-- SURVIVAL BALANCE-->
+		  <BuildTimeSeconds>180</BuildTimeSeconds>
+		  <InventoryMaxVolume>8.064</InventoryMaxVolume> <!-- Holds 32 Mags on 1x -->
+		  <Components>
+			<Component Subtype="SteelPlate" Count="200" />
+			<Component Subtype="Construction" Count="90" />
+			<Component Subtype="LargeTube" Count="90" />
+			<Component Subtype="Motor" Count="90" />
+			<Component Subtype="Computer" Count="50" />
+			<Component Subtype="SmallTube" Count="100" />
+			<Component Subtype="MetalGrid" Count="25" />
+			<Component Subtype="SteelPlate" Count="1000" />
+		  </Components>
+		  <CriticalComponent Subtype="Computer" Index="0" />
+			<!-- SURVIVAL BALANCE-->
+		  
+		  
+		  <MountPoints>
+			<MountPoint Side="Bottom" StartX="0" StartY="2" EndX="8" EndY="6" Default="true" />
+			<MountPoint Side="Back" StartX="0" StartY="0" EndX="8" EndY="1" />
+			<MountPoint Side="Left" StartX="2" StartY="0" EndX="6" EndY="1" />
+			<MountPoint Side="Right" StartX="0" StartY="0" EndX="4" EndY="1" />
+		  </MountPoints>
+		  <BuildProgressModels>
+			<Model BuildPercentUpperBound="0.2" File="..\1920388300\Models\Cubes\Large\TelionOctaBattery_con1.mwm" />
+			<Model BuildPercentUpperBound="0.5" File="..\1920388300\Models\Cubes\Large\TelionOctaBattery_con2.mwm" />
+			<Model BuildPercentUpperBound="0.8" File="..\1920388300\Models\Cubes\Large\TelionOctaBattery_con3.mwm" />
+			<Model BuildPercentUpperBound="1.0" File="..\1920388300\Models\Cubes\Large\TelionOctaBattery_con4.mwm" />
+		  </BuildProgressModels>
+		  <BlockPairName>TelionBattery</BlockPairName>
+		  <MirroringY>ZThenOffsetX</MirroringY>
+		  <MirroringZ>YThenOffsetX</MirroringZ>
+		  <Center x="3" y="0" z="5" />
+		  <EdgeType>Light</EdgeType>
+		  <WeaponDefinitionId Subtype="BatteryCannon2" />
+		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+		  <DamagedSound>ParticleWeapExpl</DamagedSound>
+		  <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+		  <DestroySound>WepLrgWarheadExpl</DestroySound>
+		  <ResourceSinkGroup>Defense</ResourceSinkGroup>
+    </Definition>
+
+	</CubeBlocks>
+</Definitions>

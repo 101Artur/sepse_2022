@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+  
+  
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>HEShell406mm_Blueprint</SubtypeId>
+      </Id>
+      <DisplayName>406mm HE Shell Stack</DisplayName>
+      <Icon>..\1920388300\textures\icon\150mmAmmo_icon.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="1800" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="120" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="200" TypeId="Ingot" SubtypeId="Magnesium" />
+	<Item Amount="550" TypeId="Ingot" SubtypeId="Copper" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="HEShell406mm" />
+      <BaseProductionTimeInSeconds>60.9</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>APShell406mm_Blueprint</SubtypeId>
+      </Id>
+      <DisplayName>406mm AP Shell Stack</DisplayName>
+      <Icon>..\1920388300\textures\icon\150mmAmmo_icon.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="560" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="120" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Magnesium" />
+	<Item Amount="550" TypeId="Ingot" SubtypeId="Copper" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="DepletedUranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="APShell406mm" />
+      <BaseProductionTimeInSeconds>80.9</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+
+  </Blueprints>
+</Definitions>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints> 
+  
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>SwarmMissileMk1_Blueprint</SubtypeId>
+      </Id>
+      <DisplayName>12 x SwarmMissile Mk1</DisplayName>
+      <Icon>..\1919062467\Textures\GUI\Icons\ammo\M12SwarmerProjectile_icon.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="600" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Aluminum" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="DepletedUranium" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Titanium" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Magnesium" />
+	<Item Amount="24" TypeId="Component" SubtypeId="AdvancedComputer" />
+	<Item Amount="12" TypeId="Component" SubtypeId="Detector" />
+	<Item Amount="12" TypeId="Component" SubtypeId="LaserEmitter" />
+	<Item Amount="6" TypeId="Component" SubtypeId="LargeTube" />
+	<Item Amount="12" TypeId="Component" SubtypeId="PowerCell" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="SwarmMissile50mm" />
+      <BaseProductionTimeInSeconds>89.28</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+	
+  </Blueprints>
+</Definitions>

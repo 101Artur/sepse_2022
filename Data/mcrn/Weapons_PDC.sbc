@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Weapons>
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>PDCTurret</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="0" ShootSoundName="" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	    <DeviateShotAngle>0</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="NATO_25x184mm" />
+		
+        <AmmoMagazine Subtype="DeU_25x184mm" />
+      </AmmoMagazines>
+      <ReloadTime>0</ReloadTime>
+    </Weapon>
+
+
+  </Weapons>
+  <Ammos>
+    <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>Energy</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>0</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>0</MaxTrajectory>
+		<IsExplosive>false</IsExplosive>
+        <BackkickForce>0</BackkickForce>
+        <PhysicalMaterial>GunBullet</PhysicalMaterial>
+      </BasicProperties>
+      <ProjectileProperties>
+        <ProjectileTrailScale>0</ProjectileTrailScale>
+        <ProjectileHitImpulse>0</ProjectileHitImpulse>
+        <ProjectileMassDamage>0</ProjectileMassDamage>
+        <ProjectileHealthDamage>0</ProjectileHealthDamage>
+        <HeadShot>true</HeadShot>
+        <ProjectileTrailColor>
+         <X>0</X>
+         <Y>0</Y>
+         <Z>0</Z>		
+		 <!-- x=red y=green z=blue and the higher the number the higher the brightness-->
+		</ProjectileTrailColor>
+        <ProjectileTrailProbability>1</ProjectileTrailProbability>
+      </ProjectileProperties>
+    </Ammo>
+  </Ammos>
+  <AmmoMagazines>
+   <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>DeU_25x184mm</SubtypeId>
+      </Id>
+      <DisplayName>25x184mm Depleted Uranium</DisplayName>
+      <Icon>..\2036872575\Textures\GUI\Icons\ammo\DeURounds.dds</Icon>
+      <Size>
+        <X>0.0</X>
+        <Y>0.0</Y>
+        <Z>0.0</Z>
+      </Size>
+      <Mass>4.0</Mass>
+      <Volume>18.0</Volume>
+      <Model>..\2036872575\Models\Ammo\DeURounds.mwm</Model>
+
+      <Capacity>165</Capacity>
+      <AmmoDefinitionId Subtype="Energy" />
+    </AmmoMagazine>
+  </AmmoMagazines>
+  <Blueprints>   
+   <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>DeU_25x184mm</SubtypeId>
+      </Id>
+      <DisplayName>25x184mm Depleted Uranium</DisplayName>
+      <Icon>..\2036872575\Textures\GUI\Icons\ammo\DeURounds.dds</Icon>
+      <Prerequisites>
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Magnesium" />
+	<Item Amount="10" TypeId="Ingot" SubtypeId="Copper" />
+	<Item Amount="1" TypeId="Ingot" SubtypeId="DepletedUranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="DeU_25x184mm" />
+      <BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+    </Blueprint>
+  </Blueprints>
+</Definitions>
