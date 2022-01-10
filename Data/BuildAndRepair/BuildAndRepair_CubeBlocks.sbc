@@ -18,7 +18,9 @@
          <Components>
             <Component Subtype="SteelPlate" Count="400" />
 			   <Component Subtype="IronPlate" Count="2000" />
-            <Component Subtype="Computer" Count="200" />  
+            <Component Subtype="CompositeArmor" Count="200" />
+            <Component Subtype="AdvancedComputer" Count="200" /> 
+            <Component Subtype="Computer" Count="200" /> 
             <Component Subtype="Construction" Count="1200" />
             <Component Subtype="InteriorPlate" Count="250" />
             <Component Subtype="SmallTube" Count="600" />
