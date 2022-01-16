@@ -51,6 +51,7 @@ namespace SolarMap.Panels
 			int xPosMult = 0;
 			int yPosMult = -1;
 			float ySizeMult = 1.75f - (panelLayout.Y + 1) * (0.125f + (panelLayout.X - 1) * 0.01f);
+			if (panelLayout.X==3) ySizeMult-=0.22f;
 
 			// Panel content.
 			for (int i = 0; i < SolarSystem.CelestialInfo.Count; i++)

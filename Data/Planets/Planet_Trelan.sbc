@@ -1,0 +1,648 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="PlanetGeneratorDefinition">
+	<Id>
+	  <TypeId>PlanetGeneratorDefinition</TypeId>
+	  <SubtypeId>Trelan</SubtypeId>
+	</Id>
+	<PlanetMaps Material="true" Ores="true" Biome="true" Occlusion="false"/>
+
+	<Difficulty>Easy Starter Planet</Difficulty>
+	<SurfaceGravity>0.92</SurfaceGravity>
+	<DefaultSurfaceMaterial Material="Grass_Trelan" MaxDepth="5"/>	<!--should never appear-->
+	<DefaultSubSurfaceMaterial Material="Mossy_Rock_2_Trelan_bare"/>	<!--stone core-->
+
+	<MaterialsMaxDepth Min="4000" Max="4000"/>	<!--doesn't really matter-->
+	<MaterialsMinDepth Min="20" Max="20"/>	<!--doesn't really matter-->
+	<MinimumSurfaceLayerDepth>3</MinimumSurfaceLayerDepth>	<!--doesn't really matter-->
+
+	<HillParams Min = "-0.1215" Max ="0.1285"/>	<!--lowest point at 0.8785 r, highest at 1.1285-->
+	
+	<SurfaceDetail>
+	  <Texture>Data/PlanetDataFiles/Extra/material_detail_4</Texture>
+	  <Size>430</Size>
+	  <Scale>2</Scale>
+	  <Slope Min="0" Max="120" />	<!--120, so surface detail appears all the way to 90 deg despite transition-->
+	  <Transition>25</Transition>
+	</SurfaceDetail>
+
+	<DefaultSurfaceTemperature>Cozy</DefaultSurfaceTemperature>
+	<HasAtmosphere>true</HasAtmosphere>
+	<MaximumOxygen>1</MaximumOxygen>
+	<Atmosphere>
+	  <Breathable>true</Breathable>
+	  <OxygenDensity>1</OxygenDensity>
+	  <Density>1</Density>
+	  <LimitAltitude>1.2</LimitAltitude>
+	  <MaxWindSpeed>80</MaxWindSpeed>
+	</Atmosphere>
+
+	<ComplexMaterials>	
+	  <MaterialGroup Name="Flats" Value="0">
+		<Rule>
+		  <Layers>
+			<Layer Material="Mossy_Rock_2_Trelan" Depth="1"/>
+		  </Layers>
+		  <Height Min="0.47" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="25" Max="90"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="Soil_Trelan" Depth="6"/>
+		  </Layers>
+		  <Height Min="0.46" Max="0.47"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="20" Max="90"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="Grass_Trelan" Depth="1"/>
+			<Layer Material="Grass_Trelan_bare" Depth="5"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="90"/>
+		</Rule>
+	  </MaterialGroup>
+	  <MaterialGroup Name="FlatsVar" Value="40">
+		<Rule>
+		  <Layers>
+			<Layer Material="DustyRocks2" Depth="6"/>
+		  </Layers>
+		  <Height Min="0.46" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="20" Max="90"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="DustyRocks3" Depth="5"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="20"/>
+		</Rule>
+	  </MaterialGroup>
+	  <MaterialGroup Name="Dunes" Value="80">
+		<Rule>
+		  <Layers>
+			<Layer Material="AlienRockGrass" Depth="1"/>
+			<Layer Material="AlienRockGrass bare" Depth="4"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="90"/>
+		</Rule>
+	  </MaterialGroup>
+	  <MaterialGroup Name="CanyonEdge" Value="120">
+		<Rule>
+		  <Layers>
+			<Layer Material="AlienRockyMountain" Depth="8"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="25" Max="90"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="Mossy_Rock_2_Trelan" Depth="1"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="10" Max="25"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="Grass_Trelan" Depth="1"/>
+			<Layer Material="Grass_Trelan_bare" Depth="5"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="10"/>
+		</Rule>
+	  </MaterialGroup>
+	  <MaterialGroup Name="CanyonVar" Value="140">
+		<Rule>
+		  <Layers>
+			<Layer Material="Mossy_Rock_2_Trelan" Depth="1"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="90"/>
+		</Rule>
+	  </MaterialGroup>
+	  <MaterialGroup Name="CanyonDeep" Value="160">
+		<Rule>
+		  <Layers>
+			<Layer Material="AlienRockyMountain" Depth="8"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="38" Max="90"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="Mossy_Rock_2_Trelan" Depth="1"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="12" Max="38"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="Grass_Trelan" Depth="1"/>
+			<Layer Material="Grass_Trelan_bare" Depth="5"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="12"/>
+		</Rule>
+	  </MaterialGroup>
+	  <MaterialGroup Name="Quarry" Value="200">
+		<Rule>
+		  <Layers>
+			<Layer Material="AlienRockyMountain" Depth="15"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="25" Max="90"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="DustyRocks3" Depth="8"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="25"/>
+		</Rule>
+	  </MaterialGroup>
+	  <MaterialGroup Name="QuarryVar" Value="240">
+		<Rule>
+		  <Layers>
+			<Layer Material="Mossy_Rock_Trelan" Depth="1"/>
+			<Layer Material="Mossy_Rock_Trelan_bare" Depth="11"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="25" Max="90"/>
+		</Rule>
+		<Rule>
+		  <Layers>
+			<Layer Material="Grass_Trelan" Depth="1"/>
+			<Layer Material="Grass_Trelan_bare" Depth="5"/>
+		  </Layers>
+		  <Height Min="-0.1" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="25"/>
+		</Rule>
+	  </MaterialGroup>
+	</ComplexMaterials>
+
+	<EnvironmentItems>
+	  <Item>
+		<Biomes>
+		  <Biome>0</Biome><!--60%-->
+		</Biomes>
+		<Materials>
+		  <Material>Grass_Trelan</Material><!--Flats_Grass-->
+		</Materials>
+		<Items>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Grass_Trelan" Density="0.1"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Rock_Grass_Trelan" Density="0.3"/>
+		</Items>
+		<Rule>
+		  <Height Min="0" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="20"/>
+		</Rule>
+	  </Item>
+	  <Item>
+		<Biomes>
+		  <Biome>0</Biome><!--60%-->
+		</Biomes>
+		<Materials>
+		  <Material>DustyRocks3</Material><!--Flats_Desert-->
+		  <Material>AlienRockGrass</Material>
+		</Materials>
+		<Items>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Desert_Trelan" Density="0.05"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Rock_Desert_Trelan" Density="0.4"/>
+		</Items>
+		<Rule>
+		  <Height Min="0" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="20"/>
+		</Rule>
+	  </Item>
+	  <Item>
+		<Biomes>
+		  <Biome>50</Biome><!--40%-->
+		</Biomes>
+		<Materials>
+		  <Material>Grass_Trelan</Material><!--Flats_Grass-->
+		</Materials>
+		<Items>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Grass_Trelan" Density="0.6"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Rock_Grass_Trelan" Density="0.3"/>
+		  <Item TypeId="MyObjectBuilder_Trees" SubtypeId="Spikes_Trelan" Density="0.025"/>
+		</Items>
+		<Rule>
+		  <Height Min="0" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="20"/>
+		</Rule>
+	  </Item>
+	  <Item>
+		<Biomes>
+		  <Biome>50</Biome><!--40%-->
+		</Biomes>
+		<Materials>
+		  <Material>DustyRocks3</Material><!--Flats_Desert-->
+		  <Material>AlienRockGrass</Material>
+		</Materials>
+		<Items>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Desert_Trelan" Density="0.5"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Rock_Desert_Trelan" Density="0.3"/>
+		  <Item TypeId="MyObjectBuilder_Trees" SubtypeId="DeadTrees_Trelan" Density="0.01"/>
+		</Items>
+		<Rule>
+		  <Height Min="0" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="20"/>
+		</Rule>
+	  </Item>
+	  <Item>
+		<Biomes>
+		  <Biome>100</Biome><!--Quarry-->
+		</Biomes>
+		<Materials>
+		  <Material>Grass_Trelan</Material><!--Overgrown Moss-->
+		</Materials>
+		<Items>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Rock_Grass_Trelan" Density="1"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Grass_Trelan" Density="1"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Desert_Trelan" Density="1"/>
+		</Items>
+		<Rule>
+		  <Height Min="0" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="20"/>
+		</Rule>
+	  </Item>
+	  <Item>
+		<Biomes>
+		  <Biome>100</Biome><!--Quarry-->
+		</Biomes>
+		<Materials>
+		  <Material>DustyRocks3</Material><!--Empty Quarry Rocks-->
+		</Materials>
+		<Items>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Rock_Desert_Trelan" Density="1"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Desert_Trelan" Density="1"/>
+		</Items>
+		<Rule>
+		  <Height Min="0" Max="1"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="20"/>
+		</Rule>
+	  </Item>
+	  <Item>
+		<Biomes>
+		  <Biome>150</Biome><!--Canyon-->
+		</Biomes>
+		<Materials>
+		  <Material>Mossy_Rock_2_Trelan</Material>
+		  <Material>Grass_Trelan</Material>
+		</Materials>
+		<Items>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Rock_Grass_Trelan" Density="0.5"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Grass_Trelan" Density="1"/>
+		  <Item TypeId="MyObjectBuilder_DestroyableItems" SubtypeId="Bush_Desert_Trelan" Density="1"/>
+		  <Item TypeId="MyObjectBuilder_Trees" SubtypeId="LushTrees_Trelan" Density="0.2"/>
+		</Items>
+		<Rule>
+		  <Height Min="0" Max="0.455"/>
+		  <Latitude Min="0" Max="90"/>
+		  <Slope Min="0" Max="20"/>
+		</Rule>
+	  </Item>
+	</EnvironmentItems>
+
+	<OreMappings>
+	  <!--Default-->
+	  <Ore Value="245" Type="Iron_01" Start="12" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="235" Type="Nickel_01" Start="12" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="225" Type="Silicon_01" Start="12" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="215" Type="Silver_01" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="205" Type="Magnesium_01" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="195" Type="Cobalt_01" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="185" Type="Gold_01" Start="30" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="145" Type="Copper" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="125" Type="Bauxite" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="115" Type="Titanium" Start="30" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="105" Type="OilSand" Start="30" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="95" Type="Coal" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+	  	  
+	  <!--Aquifer-->
+	  <Ore Value="250" Type="Ice" Start="8" Depth="20" />
+	</OreMappings>
+
+	<SoundRules>
+	  <!-- Day -->
+	  <SoundRule>
+		<Height Min="0" Max="0.6"/>
+		<Latitude Min="0" Max="90"/>
+		<SunAngleFromZenith Min="0" Max="90"/>
+		<EnvironmentSound>AmbTrelan</EnvironmentSound>
+	  </SoundRule>
+
+	  <!-- Night -->
+	  <SoundRule>
+		<Height Min="0" Max="0.6"/>
+		<Latitude Min="0" Max="90"/>
+		<SunAngleFromZenith Min="90" Max="180"/>
+		<EnvironmentSound>AmbAlienDesertNight</EnvironmentSound>
+	  </SoundRule>
+
+	  <!-- Mountain wind - AMB High -->
+	  <SoundRule>
+		<Height Min="0.6" Max="1"/>
+		<Latitude Min="0" Max="90"/>
+		<SunAngleFromZenith Min="0" Max="180"/>
+		<EnvironmentSound>AmbHigh</EnvironmentSound>
+	  </SoundRule>
+	</SoundRules>
+
+	<MusicCategories>
+	  <MusicCategory Category="Earthlike" Frequency="0.1" />
+	  <MusicCategory Category="Planet" Frequency="0.5" />
+	  <MusicCategory Category="Calm" Frequency="0.2" />
+	  <MusicCategory Category="Space" Frequency="0.2" />
+	</MusicCategories>
+
+	<AtmosphereSettings>
+	  <RayleighScattering>
+		  <X>70</X>
+		  <Y>100</Y>
+		  <Z>350</Z>
+	  </RayleighScattering>
+	  <MieColorScattering>
+		  <X>225</X>
+		  <Y>400</Y>
+		  <Z>500</Z>
+	  </MieColorScattering>
+	  <RayleighHeight>11</RayleighHeight>
+	  <RayleighHeightSpace>5.5</RayleighHeightSpace>
+	  <RayleighTransitionModifier>0.7</RayleighTransitionModifier>
+	  <MieHeight>30</MieHeight>
+	  <MieG>0.7</MieG>
+	  <SeaLevelModifier>0.99</SeaLevelModifier>
+	  <AtmosphereTopModifier>1.15</AtmosphereTopModifier>
+	  <Intensity>30</Intensity>
+	  <FogIntensity>2</FogIntensity>
+	  <Scale>1</Scale>
+	  <SunColor>
+		<X>1</X>
+		<Y>1</Y>
+		<Z>0.97</Z>
+	  </SunColor>
+	  <SunSpecularColor>
+		<X>1</X>
+		<Y>1</Y>
+		<Z>0.97</Z>
+	  </SunSpecularColor>
+	</AtmosphereSettings>
+
+	<CloudLayers>
+	  <CloudLayer>
+		<Color>
+		  <X>1</X>
+		  <Y>1</Y>
+		  <Z>0.9</Z>
+		  <W>1</W>
+		</Color>
+		<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+		<Textures>
+		  <Texture>Textures/Models/Environment/Sky/EarthFarClouds.dds</Texture>
+		</Textures>
+		<RelativeAltitude>-0.95</RelativeAltitude>
+		<RotationAxis>
+		  <X>0</X>
+		  <Y>1</Y>
+		  <Z>0</Z>
+		</RotationAxis>
+		<AngularVelocity>0.00001</AngularVelocity>
+		<InitialRotation>1.2</InitialRotation>
+		<ScalingEnabled>false</ScalingEnabled>
+		<FadeOutRelativeAltitudeStart>4</FadeOutRelativeAltitudeStart>
+		<FadeOutRelativeAltitudeEnd>1</FadeOutRelativeAltitudeEnd>
+	  </CloudLayer>
+	  
+	  <CloudLayer>
+		<Color>
+		  <X>0.8</X>
+		  <Y>0.8</Y>
+		  <Z>0.65</Z>
+		  <W>1</W>
+		</Color>
+		<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+		<Textures>
+		  <Texture>Textures/Models/Environment/Sky/EarthFarClouds.dds</Texture>
+		</Textures>
+		<RelativeAltitude>-0.96</RelativeAltitude>
+		<RotationAxis>
+		  <X>-0.4</X>
+		  <Y>1</Y>
+		  <Z>0.4</Z>
+		</RotationAxis>
+		<AngularVelocity>0.00001</AngularVelocity>
+		<InitialRotation>1.2</InitialRotation>
+		<ScalingEnabled>false</ScalingEnabled>
+		<FadeOutRelativeAltitudeStart>4</FadeOutRelativeAltitudeStart>
+		<FadeOutRelativeAltitudeEnd>1</FadeOutRelativeAltitudeEnd>
+	  </CloudLayer>
+	  
+	  <CloudLayer>
+		<Color>
+		  <X>0.45</X>
+		  <Y>0.7</Y>
+		  <Z>0.8</Z>
+		  <W>1</W>
+		</Color>
+		<Model>Models/Environment/Sky/CloudSphere.mwm</Model>
+		<Textures>
+		  <Texture>Textures/Models/Environment/Sky/TitanSky.dds</Texture>
+		</Textures>
+		<RelativeAltitude>-0.4</RelativeAltitude>
+		<RotationAxis>
+		  <X>-0.2</X>
+		  <Y>1</Y>
+		  <Z>0.2</Z>
+		</RotationAxis>
+		<AngularVelocity>0.00005</AngularVelocity>
+		<InitialRotation>0</InitialRotation>
+		<ScalingEnabled>false</ScalingEnabled>
+		<FadeOutRelativeAltitudeStart>-0.8</FadeOutRelativeAltitudeStart>
+		<FadeOutRelativeAltitudeEnd>-0.5</FadeOutRelativeAltitudeEnd>
+	  </CloudLayer>
+	</CloudLayers>
+
+	<WeatherFrequencyMin>10</WeatherFrequencyMin>	<!--updates all the time to make sure theres always weather-->
+	<WeatherFrequencyMax>20</WeatherFrequencyMax>
+	<GlobalWeather>false</GlobalWeather>	<!--broken???-->
+	<WeatherGenerators>
+		<WeatherGenerator>
+			<Voxel>Soil</Voxel>
+			<Voxel>Sand</Voxel>
+			<Weathers>
+				<Weather>
+					<Name>TrelanClear</Name>
+					<Weight>40</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>TrelanPollen</Name>
+					<Weight>25</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>TrelanWindLight</Name>
+					<Weight>12</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>TrelanWindHeavy</Name>
+					<Weight>2</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>SandStormLight</Name>
+					<Weight>9</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>SandStormHeavy</Name>
+					<Weight>2</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>AlienRainLight</Name>
+					<Weight>6</Weight>
+					<MinLength>250</MinLength>
+					<MaxLength>500</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>AlienThunderstormLight</Name>
+					<Weight>4</Weight>
+					<MinLength>250</MinLength>
+					<MaxLength>500</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+			</Weathers>
+		</WeatherGenerator>
+		
+		<WeatherGenerator>
+			<Voxel>GrassDry</Voxel>
+			<Voxel>Rock</Voxel>
+			<Weathers>
+				<Weather>
+					<Name>TrelanClear</Name>
+					<Weight>25</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>TrelanPollen</Name>
+					<Weight>45</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>TrelanWindLight</Name>
+					<Weight>9</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>TrelanWindHeavy</Name>
+					<Weight>2</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>SandStormLight</Name>
+					<Weight>7</Weight>
+					<MinLength>250</MinLength>
+					<MaxLength>500</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>SandStormHeavy</Name>
+					<Weight>2</Weight>
+					<MinLength>250</MinLength>
+					<MaxLength>500</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>AlienRainLight</Name>
+					<Weight>6</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+				<Weather>
+					<Name>AlienThunderstormLight</Name>
+					<Weight>4</Weight>
+					<MinLength>400</MinLength>
+					<MaxLength>800</MaxLength>
+					<SpawnOffset>0</SpawnOffset>
+				</Weather>
+			</Weathers>
+		</WeatherGenerator>
+	</WeatherGenerators>
+	
+	<DistortionTable>	<!--useless???-->
+	  <Distortion Type="Perlin" Value ="92" Frequency="10" Height="4" LayerCount="6"/>
+	</DistortionTable>
+	<MesherPostprocessing xsi:type="MyObjectBuilder_VoxelMesherComponentDefinition">	<!--useless???-->
+	  <PostprocessingSteps>
+		<Step xsi:type="MyObjectBuilder_VoxelPostprocessingDecimate" ForPhysics="true">
+		  <LodSettings>
+			<Settings FromLod="0">
+			  <FeatureAngle>15</FeatureAngle>
+			  <EdgeThreshold>.04</EdgeThreshold>
+			  <PlaneThreshold>.02</PlaneThreshold>
+			</Settings>
+			<Settings FromLod="1">
+			  <FeatureAngle>15</FeatureAngle>
+			  <EdgeThreshold>.04</EdgeThreshold>
+			  <PlaneThreshold>.04</PlaneThreshold>
+			</Settings>
+			<Settings FromLod="2">
+			  <FeatureAngle>15</FeatureAngle>
+			  <EdgeThreshold>.06</EdgeThreshold>
+			  <PlaneThreshold>.06</PlaneThreshold>
+			</Settings>
+		  </LodSettings>
+		</Step>
+	  </PostprocessingSteps>
+	</MesherPostprocessing>
+  </Definition>
+</Definitions>
