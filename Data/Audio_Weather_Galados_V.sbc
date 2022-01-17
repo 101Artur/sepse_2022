@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Sounds>
+		<!-- Galados_V Radiation Storm -->
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>WM_Galados_V_RadStorm</SubtypeId>
+			</Id>
+			<Category>AMB</Category>
+			<MaxDistance>200</MaxDistance>
+			<Volume>0.5</Volume>
+			<Loopable>true</Loopable>
+			<Waves>
+				<Wave Type="D2">
+					<Loop>..\2213459320\Audio/ARC/EVENT/Galados_V_RadStorm.wav</Loop>
+				</Wave>
+			</Waves>
+		</Sound>
+	</Sounds>
+</Definitions>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition"> 
+	<Id>
+	<TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>Bush_Desert_Trelan</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushMedium" Weight="0.4"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushSmall" Weight="2"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="AlienDesertBushDeadMedium" Weight="0.2"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="AlienDesertBushDeadSmall" Weight="1"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="AlienDesertBushMedium_Trelan" Weight="0.1"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="AlienDesertBushSmall_Trelan" Weight="0.5"/>
+    </Items>
+  </Definition>
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition"> 
+	<Id>
+	<TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>Bush_Grass_Trelan</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DesertBushMedium" Weight="2"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushSmall" Weight="0.5"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="DeadBushMedium" Weight="0.1"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="AlienPineBushMedium_Trelan" Weight="0.4"/>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="AlienPineBushSmall_Trelan" Weight="2"/>
+    </Items>
+  </Definition>
+  
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition"> 
+	<Id>
+	<TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>Rock_Desert_Trelan</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Rock_4_1_Trelan" Weight="1" />
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Rock_4_2_Trelan" Weight="1" />
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Rock_4_3_Trelan" Weight="1" />
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Rock_4_4_Trelan" Weight="1" />
+    </Items>
+  </Definition>
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition"> 
+	<Id>
+	<TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>Rock_Grass_Trelan</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Rock_1_1_Trelan" Weight="1" />
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Rock_1_2_Trelan" Weight="1" />
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Rock_1_3_Trelan" Weight="1" />
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Rock_1_4_Trelan" Weight="1" />
+    </Items>
+  </Definition>
+  
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition"> 
+	<Id>
+	<TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>Spikes_Trelan</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Spike1" Weight="1" />
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Spike2" Weight="1" />
+      <Item TypeId="PhysicalModelDefinition" SubtypeId="Spike3" Weight="1" />
+    </Items>
+  </Definition>
+  
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition"> 
+	<Id>
+	<TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>DeadTrees_Trelan</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="DesertTreeDeadMedium" Weight="5"/>
+      <Item TypeId="TreeDefinition" SubtypeId="DesertTreeDead" Weight="1"/>
+    </Items>
+  </Definition>
+  
+  <Definition xsi:type="VR.PhysicalModelCollectionDefinition"> 
+	<Id>
+	<TypeId>PhysicalModelCollectionDefinition</TypeId>
+      <SubtypeId>LushTrees_Trelan</SubtypeId>
+    </Id>
+    <Items>
+      <Item TypeId="TreeDefinition" SubtypeId="AlienDesertTreeMedium_Trelan" Weight="1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="AlienDesertTree_Trelan" Weight="0.1"/>
+      <Item TypeId="TreeDefinition" SubtypeId="AlienPineTreeMedium_Trelan" Weight="1.5"/>
+      <Item TypeId="TreeDefinition" SubtypeId="AlienPineTree_Trelan" Weight="0.3"/>
+    </Items>
+  </Definition>
+  
+</Definitions>
+
+
+

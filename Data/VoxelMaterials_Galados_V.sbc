@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<VoxelMaterials>
+		<!-- AlienRedGrass -->
+		<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+			<Id>
+				<TypeId>VoxelMaterialDefinition</TypeId>
+				<SubtypeId>AlienRedGrass</SubtypeId>
+			</Id>
+			<SpawnsInAsteroids>false</SpawnsInAsteroids>
+			<SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+			<MaterialTypeName>OrangeAlienGrass</MaterialTypeName>
+			<MinedOre>Stone</MinedOre>
+			<MinedOreRatio>5</MinedOreRatio>
+			<CanBeHarvested>true</CanBeHarvested>
+			<IsRare>false</IsRare>
+			<ColorMetalXZnY>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_cm.dds</ColorMetalXZnY>
+			<NormalGlossXZnY>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_ng.dds</NormalGlossXZnY>
+			<ExtXZnY>..\2213459320\Textures\Voxels\Galados_V\Dummy_add.dds</ExtXZnY>
+			<ColorMetalXZnYFar1>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+			<NormalGlossXZnYFar1>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+			<ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+			<ColorMetalXZnYFar2>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+			<NormalGlossXZnYFar2>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+			<ExtXZnYFar2>..\2213459320\Textures\Voxels\Galados_V\Dummy_add.dds</ExtXZnYFar2>
+			<ExtDetailScale>0.005</ExtDetailScale>
+			<Scale>500</Scale>
+			<Far1Distance>30</Far1Distance>
+			<Far2Distance>500</Far2Distance>
+			<Far1Scale>150</Far1Scale>
+			<Far2Scale>2000</Far2Scale>
+			<Far3Distance>10000</Far3Distance>
+			<Far3Color>
+				<X>0.32</X>
+				<Y>0.025</Y>
+				<Z>0.025</Z>
+				<W>1.0</W>
+			</Far3Color>
+			<BareVariant>AlienRedGrass bare</BareVariant>
+			<!-- Foliage -->
+			<FoliageColorTextureArray>
+				<Color>..\2213459320\Textures\Models\Environment\Grass\AlienRedGrass_Tubes_cm.dds</Color>
+				<Color>..\2213459320\Textures\Models\Environment\Grass\AlienRedGrass_Tubes01_cm.dds</Color>
+				<Color>..\2213459320\Textures\Models\Environment\Grass\AlienRedGrass_Tubes02_cm.dds</Color>
+			</FoliageColorTextureArray>
+			<FoliageNormalTextureArray>
+				<Normal>..\2213459320\Textures\Models\Environment\Grass\AlienRedGrass_Tubes_ng.dds</Normal>
+				<Normal>..\2213459320\Textures\Models\Environment\Grass\AlienRedGrass_Tubes01_ng.dds</Normal>
+				<Normal>..\2213459320\Textures\Models\Environment\Grass\AlienRedGrass_Tubes02_ng.dds</Normal>
+			</FoliageNormalTextureArray>
+			<FoliageDensity>3</FoliageDensity>
+			<FoliageScale>
+				<X>0.6</X>
+				<Y>0.6</Y>
+			</FoliageScale>
+			<FoliageRandomRescaleMult>0.20</FoliageRandomRescaleMult>
+			<DamagedMaterial>AlienSoil</DamagedMaterial>
+			<ColorKey Hex="#ACBB56"/>
+		</VoxelMaterial>
+		<!-- AlienRedGrass Bare -->
+		<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+			<Id>
+				<TypeId>VoxelMaterialDefinition</TypeId>
+				<SubtypeId>AlienRedGrass bare</SubtypeId>
+			</Id>
+			<SpawnsInAsteroids>false</SpawnsInAsteroids>
+			<SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+			<MaterialTypeName>OrangeAlienGrass</MaterialTypeName>
+			<MinedOre>Stone</MinedOre>
+			<MinedOreRatio>5</MinedOreRatio>
+			<CanBeHarvested>true</CanBeHarvested>
+			<IsRare>false</IsRare>
+			<ColorMetalXZnY>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_cm.dds</ColorMetalXZnY>
+			<NormalGlossXZnY>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_ng.dds</NormalGlossXZnY>
+			<ExtXZnY>..\2213459320\Textures\Voxels\Galados_V\Dummy_add.dds</ExtXZnY>
+			<ColorMetalXZnYFar1>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_Far1_cm.dds</ColorMetalXZnYFar1>
+			<NormalGlossXZnYFar1>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_Far1_ng.dds</NormalGlossXZnYFar1>
+			<ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+			<ColorMetalXZnYFar2>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_Far2_cm.dds</ColorMetalXZnYFar2>
+			<NormalGlossXZnYFar2>..\2213459320\Textures\Voxels\Galados_V\AlienRedGrass_Far2_ng.dds</NormalGlossXZnYFar2>
+			<ExtXZnYFar2>..\2213459320\Textures\Voxels\Galados_V\Dummy_add.dds</ExtXZnYFar2>
+			<ExtDetailScale>0.005</ExtDetailScale>
+			<Scale>500</Scale>
+			<Far1Distance>30</Far1Distance>
+			<Far2Distance>500</Far2Distance>
+			<Far1Scale>150</Far1Scale>
+			<Far2Scale>2000</Far2Scale>
+			<Far3Distance>10000</Far3Distance>
+			<Far3Color>
+				<X>0.32</X>
+				<Y>0.025</Y>
+				<Z>0.025</Z>
+				<W>1.0</W>
+			</Far3Color>
+			<ColorKey Hex="#ACBB56"/>
+		</VoxelMaterial>
+		<VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+			<Id>
+				<TypeId>VoxelMaterialDefinition</TypeId>
+				<SubtypeId>Galados_VWater</SubtypeId>
+			</Id>
+			<SpawnsInAsteroids>false</SpawnsInAsteroids>
+			<SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+			<MaterialTypeName>Ice</MaterialTypeName>
+			<MinedOre>Ice</MinedOre>
+			<MinedOreRatio>5</MinedOreRatio>
+			<CanBeHarvested>true</CanBeHarvested>
+			<IsRare>false</IsRare>
+			<ColorMetalXZnY>..\2213459320\Textures\Voxels\Galados_V\Galados_VWater_cm.dds</ColorMetalXZnY>
+			<NormalGlossXZnY>..\2213459320\Textures\Voxels\Galados_V\Galados_VWater_ng.dds</NormalGlossXZnY>
+			<ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+			<ExtDetailScale>0.001</ExtDetailScale>
+			<SimpleTilingSetup>
+			</SimpleTilingSetup>
+			<ScaleMultiplier>6</ScaleMultiplier>
+		</VoxelMaterial>
+	</VoxelMaterials>
+</Definitions>
