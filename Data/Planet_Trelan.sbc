@@ -330,18 +330,18 @@
 
 	<OreMappings>
 	  <!--Default-->
-	  <Ore Value="245" Type="Iron_01" Start="12" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="235" Type="Nickel_01" Start="12" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="225" Type="Silicon_01" Start="12" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="215" Type="Silver_01" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="205" Type="Magnesium_01" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="195" Type="Cobalt_01" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="185" Type="Gold_01" Start="30" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="145" Type="Copper" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="125" Type="Bauxite" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="115" Type="Titanium" Start="30" Depth="3" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="105" Type="OilSand" Start="30" Depth="8" TargetColor="#616c83" ColorInfluence="15"/>
-	  <Ore Value="95" Type="Coal" Start="20" Depth="5" TargetColor="#616c83" ColorInfluence="15"/>
+	  <Ore Value="245" Type="Iron_01" Start="12" Depth="8"/>
+	  <Ore Value="235" Type="Nickel_01" Start="12" Depth="8"/>
+	  <Ore Value="225" Type="Silicon_01" Start="12" Depth="8"/>
+	  <Ore Value="215" Type="Silver_01" Start="20" Depth="5"/>
+	  <Ore Value="205" Type="Magnesium_01" Start="20" Depth="5"/>
+	  <Ore Value="195" Type="Cobalt_01" Start="20" Depth="5"/>
+	  <Ore Value="185" Type="Gold_01" Start="30" Depth="3"/>
+	  <Ore Value="145" Type="Copper" Start="20" Depth="5"/>
+	  <Ore Value="125" Type="Bauxite" Start="20" Depth="5"/>
+	  <Ore Value="115" Type="Titanium" Start="30" Depth="3"/>
+	  <Ore Value="105" Type="OilSand" Start="30" Depth="8"/>
+	  <Ore Value="95" Type="Coal" Start="20" Depth="5"/>
 	  
 	  <!--Aquifer-->
 	  <Ore Value="250" Type="Ice" Start="8" Depth="20" />
