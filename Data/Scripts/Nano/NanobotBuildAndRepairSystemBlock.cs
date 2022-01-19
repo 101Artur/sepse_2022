@@ -55,7 +55,7 @@ namespace SpaceEquipmentLtd.NanobotBuildAndRepairSystem
       public const float WELDER_TRANSPORTSPEED_METER_PER_SECOND_DEFAULT = 5f;
       public const float WELDER_TRANSPORTVOLUME_DIVISOR = 10f;
       public const float WELDER_TRANSPORTVOLUME_MAX_MULTIPLIER = 8f;
-      public const float WELDER_AMOUNT_PER_SECOND = 0.1f;
+      public const float WELDER_AMOUNT_PER_SECOND = 0.3f;
       public const float WELDER_MAX_REPAIR_BONE_MOVEMENT_SPEED = 0.1f;
       public const float GRINDER_AMOUNT_PER_SECOND = 1f;
       public const float WELDER_SOUND_VOLUME = 2f;

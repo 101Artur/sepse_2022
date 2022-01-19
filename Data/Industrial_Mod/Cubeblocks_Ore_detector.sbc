@@ -43,7 +43,7 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>30</BuildTimeSeconds>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
-      <MaximumRange>100</MaximumRange>
+      <MaximumRange>150</MaximumRange>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
@@ -70,7 +70,7 @@
         <Component Subtype="Construction" Count="40" />
         <Component Subtype="CopperWire" Count="10" />
         <Component Subtype="Motor" Count="5" />
-		<Component Subtype="Computer" Count="10" />
+		    <Component Subtype="Computer" Count="10" />
         <Component Subtype="AdvancedComputer" Count="25" />
         <Component Subtype="Detector" Count="20" />
         <Component Subtype="SteelPlate" Count="20" />
@@ -121,7 +121,7 @@
         <Component Subtype="SteelPlate" Count="5" />
         <Component Subtype="Construction" Count="5" />
         <Component Subtype="Motor" Count="1" />
-		<Component Subtype="Computer" Count="10" />
+		    <Component Subtype="Computer" Count="10" />
         <Component Subtype="AdvancedComputer" Count="5" />
         <Component Subtype="Detector" Count="5" />
         <Component Subtype="SteelPlate" Count="2" />
@@ -145,7 +145,7 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>14</BuildTimeSeconds>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
-      <MaximumRange>50</MaximumRange>
+      <MaximumRange>100</MaximumRange>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
@@ -194,7 +194,7 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>14</BuildTimeSeconds>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
-      <MaximumRange>25</MaximumRange>
+      <MaximumRange>50</MaximumRange>
       <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
