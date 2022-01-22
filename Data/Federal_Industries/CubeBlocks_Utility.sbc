@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    
+	
+	<Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
+            <Id>
+                <TypeId>OxygenGenerator</TypeId>
+                <SubtypeId>H2 O2 Generator Large</SubtypeId>
+            </Id>
+            <DisplayName>O2-H2 Generator Large</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\OxygenGeneratorSmall.dds</Icon>
+            <Description>Description_OxygenGenerator</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2330491803\Models\H2 O2 Generator Large.mwm</Model>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <Components>
+                <Component Subtype="SteelPlate" Count="4000" />
+                <Component Subtype="SepseCoin" Count="3" />
+                <Component Subtype="Construction" Count="250" />
+                <Component Subtype="GoldWire" Count="250" >
+                <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>                
+                <Component Subtype="LargeTube" Count="100" />
+                <Component Subtype="Motor" Count="200" />
+                <Component Subtype="HeatingElement" Count="200" />
+                <Component Subtype="ZoneChip" Count="15">
+				        <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>     
+                <Component Subtype="AdvancedComputer" Count="100" />
+                <Component Subtype="Computer" Count="250" />
+                <Component Subtype="SteelPlate" Count="1000" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+				<MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="2.0" EndY="3.0"/>
+				<MountPoint Side="Right" StartX="1.0" StartY="0.0" EndX="2.0" EndY="3.0"/>
+				<MountPoint Side="Top" StartX="0.0" StartY="1.0" EndX="3.0" EndY="2.0"/>
+				<MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="3.0" EndY="2.0"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2330491803\Models\H2 O2 Generator Large_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2330491803\Models\H2 O2 Generator Large_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2330491803\Models\H2 O2 Generator Large_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>H2 O2 Generator Large</BlockPairName>
+            <Center x="1" y="1" z="0" />
+            <BuildTimeSeconds>14</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <IceConsumptionPerSecond>250</IceConsumptionPerSecond>
+            <InventoryMaxVolume>5</InventoryMaxVolume>
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+
+            <InventoryFillFactorMin>0.3</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.6</InventoryFillFactorMax>
+
+            <FuelPullAmountFromConveyorInMinutes>2.75</FuelPullAmountFromConveyorInMinutes>
+            
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>5</OperationalPowerConsumption>
+            <ProducedGases>
+                <GasInfo>
+                    <Id>
+                        <TypeId>GasProperties</TypeId>
+                        <SubtypeId>Oxygen</SubtypeId>
+                    </Id>
+                    <IceToGasRatio>10</IceToGasRatio>
+                </GasInfo>
+                <GasInfo>
+                    <Id>
+                        <TypeId>GasProperties</TypeId>
+                        <SubtypeId>Hydrogen</SubtypeId>
+                    </Id>
+                    <IceToGasRatio>20</IceToGasRatio>
+                </GasInfo>
+            </ProducedGases>
+            <BlueprintClasses>
+                <Class>Ice</Class>
+                <Class>OxygenBottles</Class>
+                <Class>HydrogenBottles</Class>
+            </BlueprintClasses>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <GenerateSound>BlockOxyGenProcess</GenerateSound>
+            <IdleSound>BlockOxyGenIdle</IdleSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>50</PCU>
+            <MirroringX>Z</MirroringX>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <TieredUpdateTimes>
+                <unsignedInt>300</unsignedInt>
+                <unsignedInt>600</unsignedInt>
+                <unsignedInt>1200</unsignedInt>
+            </TieredUpdateTimes>
+        </Definition>
+	
+	
+	
+ 
+  </CubeBlocks>
+</Definitions>

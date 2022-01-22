@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <CubeBlocks>
+  <CubeBlocks>  
   
     <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
       <Id>
@@ -81,7 +81,7 @@
       <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Assembler.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="600" />
+        <Component Subtype="SteelPlate" Count="6000" />
         <Component Subtype="Construction" Count="400" />
         <Component Subtype="CopperWire" Count="100" />
         <Component Subtype="Motor" Count="100" />
@@ -147,7 +147,8 @@
       <Center x="1" y="1" z="1" />
       <Model>..\2344068716\Models\OreCrusher.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="500" />
+        <Component Subtype="SteelPlate" Count="5000" />
+        <Component Subtype="SepseCoin" Count="3" /> 
         <Component Subtype="Construction" Count="250" />
         <Component Subtype="CopperWire" Count="150" />
         <Component Subtype="LargeTube" Count="100" />
@@ -157,14 +158,14 @@
         <Component Subtype="SteelPlate" Count="150" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
-	<MountPoints>
-		<MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="2.00" EndY="1.00" />
-		<MountPoint Side="Back" StartX="1.00" StartY="3.00" EndX="2.00" EndY="4.00" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
-	</MountPoints>
-	<MirroringX>None</MirroringX>
-	<MirroringY>Z</MirroringY>
-	<MirroringZ>Y</MirroringZ>
+    <MountPoints>
+      <MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="2.00" EndY="1.00" />
+      <MountPoint Side="Back" StartX="1.00" StartY="3.00" EndX="2.00" EndY="4.00" />
+      <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+    </MountPoints>
+    <MirroringX>None</MirroringX>
+    <MirroringY>Z</MirroringY>
+    <MirroringZ>Y</MirroringZ>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="0.33" File="..\2344068716\Models\Construct\OreCrusherConstruct1.mwm" />
         <Model BuildPercentUpperBound="0.66" File="..\2344068716\Models\Construct\OreCrusherConstruct2.mwm" />
@@ -212,6 +213,7 @@
       <Model>..\2344068716\Models\OrePurifier.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="350" />
+        <Component Subtype="SepseCoin" Count="5" />
         <Component Subtype="Construction" Count="250" />
         <Component Subtype="CopperWire" Count="250" />
         <Component Subtype="LargeTube" Count="100" />
@@ -219,6 +221,12 @@
         <Component Subtype="Motor" Count="125" />
         <Component Subtype="GoldWire" Count="250" />
         <Component Subtype="LaserEmitter" Count="100" />
+        <Component Subtype="ZoneChip" Count="15" >
+                <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
         <Component Subtype="Computer" Count="50" />
         <Component Subtype="AdvancedComputer" Count="200" />
         <Component Subtype="SteelPlate" Count="150" />
@@ -278,11 +286,17 @@
 			<Model>..\2344068716\Models\GasolineRefinery.mwm</Model>
 			<Components>
 				<Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="SepseCoin" Count="1" />
 				<Component Subtype="Construction" Count="175" />
 				<Component Subtype="LargeTube" Count="125" />
 				<Component Subtype="SmallTube" Count="75" />
 				<Component Subtype="Motor" Count="75" />
-				<Component Subtype="Computer" Count="50" />
+				<Component Subtype="ZoneChip" Count="10" >
+                <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+        </Component>
 				<Component Subtype="Computer" Count="50" />
 				<Component Subtype="AdvancedComputer" Count="125" />
 				<Component Subtype="Ceramic" Count="125" />
@@ -364,11 +378,17 @@
 			<Model>..\2344068716\Models\FuelRefinery.mwm</Model>
 			<Components>
 				<Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="SepseCoin" Count="2" />
 				<Component Subtype="Construction" Count="175" />
 				<Component Subtype="LargeTube" Count="125" />
 				<Component Subtype="SmallTube" Count="75" />
 				<Component Subtype="Motor" Count="75" />
-				<Component Subtype="Computer" Count="50" />
+        <Component Subtype="ZoneChip" Count="10" >
+                <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+        </Component>
 				<Component Subtype="Computer" Count="50" />
 				<Component Subtype="AdvancedComputer" Count="125" />
 				<Component Subtype="Ceramic" Count="125" />
@@ -1007,6 +1027,7 @@
       <Model>..\2344068716\Models\NanoAssembler.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="SepseCoin" Count="10" />
         <Component Subtype="Construction" Count="400" />
         <Component Subtype="GoldWire" Count="250" />
         <Component Subtype="Motor" Count="100" />
@@ -1014,6 +1035,12 @@
         <Component Subtype="LaserEmitter" Count="50" />
         <Component Subtype="Ceramic" Count="250" />
         <Component Subtype="SuperMagnet" Count="50" />
+        <Component Subtype="ZoneChip" Count="25" >
+                <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
         <Component Subtype="Computer" Count="50" />
         <Component Subtype="AdvancedComputer" Count="500" />
         <Component Subtype="SteelPlate" Count="100" />
@@ -1133,13 +1160,19 @@
       <Model>..\2344068716\Models\AdvancedAssembler.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="300" />
+        <Component Subtype="SepseCoin" Count="5" />
         <Component Subtype="Construction" Count="375" />
         <Component Subtype="CopperWire" Count="200" />
         <Component Subtype="InteriorPlate" Count="300" />
         <Component Subtype="Motor" Count="100" />
         <Component Subtype="MetalGrid" Count="50" />
         <Component Subtype="GoldWire" Count="75" />
-        <Component Subtype="Computer" Count="50" />
+        <Component Subtype="ZoneChip" Count="15" >
+                <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
         <Component Subtype="Computer" Count="50" />
         <Component Subtype="AdvancedComputer" Count="400" />
         <Component Subtype="SteelPlate" Count="100" />
@@ -1335,11 +1368,18 @@
       <Model>..\2344068716\Models\OilCracker.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="1500" />
+        <Component Subtype="SepseCoin" Count="3" />
         <Component Subtype="Construction" Count="400" />
         <Component Subtype="LargeTube" Count="400" />
         <Component Subtype="CopperWire" Count="200" />
         <Component Subtype="Motor" Count="125" />
         <Component Subtype="HeatingElement" Count="250" />
+        <Component Subtype="ZoneChip" Count="15" >
+                <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
         <Component Subtype="Computer" Count="250" />
         <Component Subtype="SteelPlate" Count="500" />
       </Components>

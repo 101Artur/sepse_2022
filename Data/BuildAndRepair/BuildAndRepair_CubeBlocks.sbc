@@ -17,6 +17,7 @@
          <Model>Models\NanobotBuildAndRepairSystem\SELtdLargeNanobotBuildAndRepairSystem.mwm</Model>
          <Components>
             <Component Subtype="SteelPlate" Count="400" />
+            <Component Subtype="SepseCoin" Count="10" />
 			   <Component Subtype="IronPlate" Count="2000" />
             <Component Subtype="CompositeArmor" Count="200" />
             <Component Subtype="AdvancedComputer" Count="200" /> 
@@ -25,7 +26,7 @@
             <Component Subtype="InteriorPlate" Count="250" />
             <Component Subtype="SmallTube" Count="600" />
             <Component Subtype="LargeTube" Count="100" />
-            <Component Subtype="ZoneChip" Count="10" >
+            <Component Subtype="ZoneChip" Count="50" >
 				<DeconstructId>
 					<TypeId>Ore</TypeId>
 					<SubtypeId>Scrap</SubtypeId>

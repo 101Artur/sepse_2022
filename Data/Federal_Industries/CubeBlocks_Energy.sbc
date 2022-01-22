@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>   
+        <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+            <Id>
+                <TypeId>WindTurbine</TypeId>
+				<SubtypeId>Large Wind Turbine</SubtypeId>
+			</Id>
+			<DisplayName>Large Wind Turbine</DisplayName>
+			<Description>Large Wind Turbine</Description>
+            <Icon>..\2330491803\Textures\GUI\Icons\Large Wind Turbine.png</Icon>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <PlaceDecals>false</PlaceDecals>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="8" z="5"/>
+            <Center x="2" y="0" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2330491803\Models\Large Wind Turbine.mwm</Model>
+            <Components>
+                <Component Subtype="InteriorPlate" Count="50" />
+                <Component Subtype="SepseCoin" Count="1" />
+                <Component Subtype="Motor" Count="40" />
+                <Component Subtype="Construction" Count="100" />
+                <Component Subtype="Girder" Count="68" />
+                <Component Subtype="ZoneChip" Count="10">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>                
+                <Component Subtype="AdvancedComputer" Count="60" />
+                <Component Subtype="Computer" Count="60" />
+                <Component Subtype="InteriorPlate" Count="150" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Top" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0"/>
+				<MountPoint Side="Bottom" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0"/>
+            </MountPoints>
+            <MirroringY>Z</MirroringY>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="..\2330491803\Models\Large Wind Turbine_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="..\2330491803\Models\Large Wind Turbine_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="..\2330491803\Models\Large Wind Turbine_BS3.mwm"/>
+            </BuildProgressModels>
+
+            <BlockPairName>Large Wind Turbine</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <DamageEffectId>214</DamageEffectId>
+
+            <ActionSound>ArcBlockWindTurbine</ActionSound>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+
+            <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+            <MaxPowerOutput>6</MaxPowerOutput>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <IsAirTight>false</IsAirTight>
+
+            <VoxelPlacement>
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                </DynamicMode>
+            </VoxelPlacement>
+
+            <RaycasterSize>20</RaycasterSize>
+            <RaycastersCount>9</RaycastersCount>
+            <MinRaycasterClearance>0.3</MinRaycasterClearance>
+            <OptimalGroundClearance>25</OptimalGroundClearance>
+            <RaycastersToFullEfficiency>7</RaycastersToFullEfficiency>
+            <OptimalWindSpeed>76</OptimalWindSpeed>
+            <TurbineSpinUpSpeed>0.5</TurbineSpinUpSpeed>
+            <TurbineSpinDownSpeed>0.3</TurbineSpinDownSpeed>
+            <TurbineRotationSpeed>-8</TurbineRotationSpeed>
+            <PCU>55</PCU>
+        </Definition>
+	</CubeBlocks>   
+</Definitions>

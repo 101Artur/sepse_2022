@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_HydrogenEngineDefinition">
+            <Id>
+                <TypeId>HydrogenEngine</TypeId>
+                <SubtypeId>High tech hydrogen engine</SubtypeId>
+            </Id>
+            <DisplayName>High Tech Hydrogen Engine</DisplayName>
+            <Description>Description_PowerGenerator</Description>
+            <Icon>..\2601590536\Textures\Icons\HighTechHydrogenEngine.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2601590536\Models\HighTechHydrogenEngine.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="240" />
+                <Component Subtype="ZoneChip" Count="5">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>                
+                <Component Subtype="Construction" Count="180" />
+                <Component Subtype="LargeTube" Count="36" />
+                <Component Subtype="SmallTube" Count="60" />
+                <Component Subtype="Motor" Count="36" />
+                <Component Subtype="AdvancedComputer" Count="12" />
+                <Component Subtype="Computer" Count="12" />
+                <Component Subtype="Construction" Count="30" />
+                <Component Subtype="PowerCell" Count="3">
+					<DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+				 </Component>
+                <Component Subtype="SteelPlate" Count="60" />
+            </Components>
+            <CriticalComponent Subtype="PowerCell" Index="0" />
+            <MountPoints>
+			<MountPoint Side="Front" StartX="1" StartY="0.00" EndX="2" EndY="1.00"/>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="..\2601590536\Models\HighTechHydrogenEngine_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2601590536\Models\HighTechHydrogenEngine_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2601590536\Models\HighTechHydrogenEngine_BS3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>High Tech Hydrogen Engine</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
+            <ResourceSinkGroup>Generators</ResourceSinkGroup>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <MaxPowerOutput>17</MaxPowerOutput>
+            <FuelCapacity>350000</FuelCapacity>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <IsAirTight>false</IsAirTight>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <FuelInfos>
+                <FuelInfo>
+                    <Id>
+                        <TypeId>GasProperties</TypeId>
+                        <SubtypeId>Hydrogen</SubtypeId>
+                    </Id>
+                </FuelInfo>
+            </FuelInfos>
+            <FuelProductionToCapacityMultiplier>0.01</FuelProductionToCapacityMultiplier>
+            <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
+
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+
+            <AnimationSpeed>3</AnimationSpeed>
+            <PistonAnimationMin>0</PistonAnimationMin>
+            <PistonAnimationMax>0.8</PistonAnimationMax>
+            <PistonAnimationOffsets>
+                <float>0.5</float>
+                <float>0.0</float>
+                <float>0.8</float>
+                <float>0.0</float>
+                <float>0.5</float>
+                <float>0.0</float>
+                <float>0.5</float>
+                <float>0.5</float>
+                <float>0.0</float>
+                <float>0.5</float>
+            </PistonAnimationOffsets>
+            <AnimationSpinUpSpeed>0.3</AnimationSpinUpSpeed>
+            <AnimationSpinDownSpeed>0.3</AnimationSpinDownSpeed>
+            <PCU>25</PCU>
+        </Definition>
+	
+	</CubeBlocks>
+</Definitions>

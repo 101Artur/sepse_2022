@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+	<Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
+            <Id>
+                <TypeId>SolarPanel</TypeId>
+                <SubtypeId>SLAdvanced_solar_panel</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Solar Panel</DisplayName>
+            <Icon>..\2601590536\Textures\Icons\High tech solar Panel.dds</Icon>
+            <Description>Description_SolarPanel</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="1" z="5"/>
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2601590536\Models\High Tech Solar Panels.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="16" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="Girder" Count="48" />
+                <Component Subtype="Computer" Count="16" />
+                <Component Subtype="ZoneChip" Count="3">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="SolarCell" Count="128">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Construction" Count="16" />
+                <Component Subtype="BulletproofGlass" Count="16" />
+            </Components>
+            <CriticalComponent Subtype="SolarCell" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+            </MountPoints>
+            <BlockPairName>HighTechSolarPanel</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>75</BuildTimeSeconds>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2601590536\Models\High Tech Solar Panels_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2601590536\Models\High Tech Solar Panels_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2601590536\Models\High Tech Solar Panels_BS3.mwm"/>
+			</BuildProgressModels>
+
+            <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+            <MaxPowerOutput>1.9</MaxPowerOutput>
+
+            <PanelOrientation>
+                <X>0</X>
+                <Y>1</Y>
+                <Z>0</Z>
+            </PanelOrientation>
+            <TwoSidedPanel>true</TwoSidedPanel>
+            <PanelOffset>0.1</PanelOffset>
+            <DamageEffectName>Damage_Electrical_Damaged_SolarPanels</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <PhysicalMaterial>GlassOpaque</PhysicalMaterial>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Large3X</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>75</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
+            <Id>
+                <TypeId>SolarPanel</TypeId>
+                <SubtypeId>SLAdvanced_solar_panel_Offset</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Solar Panel Offset</DisplayName>
+            <Icon>..\2601590536\Textures\Icons\High tech solar Panel Offset.dds</Icon>
+            <Description>Description_SolarPanel</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="1" z="5"/>
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2601590536\Models\High Tech Solar Panels Offset.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="16" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="Girder" Count="48" />
+                <Component Subtype="Computer" Count="16" />
+                <Component Subtype="ZoneChip" Count="3">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="SolarCell" Count="128">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Construction" Count="16" />
+                <Component Subtype="BulletproofGlass" Count="16" />
+            </Components>
+            <CriticalComponent Subtype="SolarCell" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+            </MountPoints>
+            <BlockPairName>HighTechSolarPanelOffset</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>75</BuildTimeSeconds>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2601590536\Models\High Tech Solar Panels Offset_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2601590536\Models\High Tech Solar Panels Offset_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2601590536\Models\High Tech Solar Panels Offset_BS3.mwm"/>
+			</BuildProgressModels>
+
+            <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+            <MaxPowerOutput>1.9</MaxPowerOutput>
+
+            <PanelOrientation>
+                <X>0</X>
+                <Y>1</Y>
+                <Z>0</Z>
+            </PanelOrientation>
+            <TwoSidedPanel>true</TwoSidedPanel>
+            <PanelOffset>0.1</PanelOffset>
+            <DamageEffectName>Damage_Electrical_Damaged_SolarPanels</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <PhysicalMaterial>GlassOpaque</PhysicalMaterial>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Large3X</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>75</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
+            <Id>
+                <TypeId>SolarPanel</TypeId>
+                <SubtypeId>SLAdvanced_solar_panel_45Rotated</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Solar Panel 45° rotated</DisplayName>
+            <Icon>..\2601590536\Textures\Icons\High tech solar Panel Rotated.dds</Icon>
+            <Description>Description_SolarPanel</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="1" z="5"/>
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2601590536\Models\High Tech Solar Panels Rotated.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="16" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="Girder" Count="48" />
+                <Component Subtype="Computer" Count="16" />
+                <Component Subtype="ZoneChip" Count="3">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="SolarCell" Count="128">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Construction" Count="16" />
+                <Component Subtype="BulletproofGlass" Count="16" />
+            </Components>
+            <CriticalComponent Subtype="SolarCell" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="1.23" StartY="0.00" EndX="3.77" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="1.23" StartY="0.00" EndX="3.77" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="1.23" StartY="0.00" EndX="3.77" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="1.23" StartY="0.00" EndX="3.77" EndY="1.00"/>
+            </MountPoints>
+            <BlockPairName>HighTechSolarPanelRotated</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>75</BuildTimeSeconds>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2601590536\Models\High Tech Solar Panels Rotated_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2601590536\Models\High Tech Solar Panels Rotated_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2601590536\Models\High Tech Solar Panels Rotated_BS3.mwm"/>
+			</BuildProgressModels>
+
+            <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+            <MaxPowerOutput>1.9</MaxPowerOutput>
+
+            <PanelOrientation>
+                <X>0</X>
+                <Y>1</Y>
+                <Z>0</Z>
+            </PanelOrientation>
+            <TwoSidedPanel>true</TwoSidedPanel>
+            <PanelOffset>0.1</PanelOffset>
+            <DamageEffectName>Damage_Electrical_Damaged_SolarPanels</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <PhysicalMaterial>GlassOpaque</PhysicalMaterial>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Large3X</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>75</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
+            <Id>
+                <TypeId>SolarPanel</TypeId>
+                <SubtypeId>SLAdvanced_solar_panel_45Rotated_Offset</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Solar Panel 45° rotated Offset</DisplayName>
+            <Icon>..\2601590536\Textures\Icons\High tech solar Panel Rotated Offset.dds</Icon>
+            <Description>Description_SolarPanel</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="1" z="5"/>
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2601590536\Models\High Tech Solar Panels Rotated Offset.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="16" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="Girder" Count="48" />
+                <Component Subtype="Computer" Count="16" />
+                <Component Subtype="ZoneChip" Count="3">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="SolarCell" Count="128">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Construction" Count="16" />
+                <Component Subtype="BulletproofGlass" Count="16" />
+            </Components>
+            <CriticalComponent Subtype="SolarCell" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="1.23" StartY="0.00" EndX="3.77" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="1.23" StartY="0.00" EndX="3.77" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="1.23" StartY="0.00" EndX="3.77" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="1.23" StartY="0.00" EndX="3.77" EndY="1.00"/>
+            </MountPoints>
+            <BlockPairName>HighTechSolarPanelRotatedOffset</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>75</BuildTimeSeconds>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="..\2601590536\Models\High Tech Solar Panels Rotated Offset_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2601590536\Models\High Tech Solar Panels Rotated Offset_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2601590536\Models\High Tech Solar Panels Rotated Offset_BS3.mwm"/>
+			</BuildProgressModels>
+
+            <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+            <MaxPowerOutput>1.9</MaxPowerOutput>
+
+            <PanelOrientation>
+                <X>0</X>
+                <Y>1</Y>
+                <Z>0</Z>
+            </PanelOrientation>
+            <TwoSidedPanel>true</TwoSidedPanel>
+            <PanelOffset>0.1</PanelOffset>
+            <DamageEffectName>Damage_Electrical_Damaged_SolarPanels</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <PhysicalMaterial>GlassOpaque</PhysicalMaterial>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Large3X</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>75</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+	
+	
+	</CubeBlocks>
+</Definitions>

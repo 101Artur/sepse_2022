@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <!-- Region BatteryBlock-->
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+            <Id>
+                <TypeId>BatteryBlock</TypeId>
+                <SubtypeId>SLAdvancedBattery</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Battery</DisplayName>
+            <Icon>..\2601590536\Textures\Icons\High Tech Battery.dds</Icon>
+            <Description>Description_Battery</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2601590536\Models\High Tech Battery.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="40" />
+                <Component Subtype="SepseCoin" Count="2" />  
+                <Component Subtype="Construction" Count="20" />
+                <Component Subtype="ZoneChip" Count="5">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="PowerCell" Count="160">
+                    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>           
+                <Component Subtype="Computer" Count="50" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="SteelPlate" Count="120" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="..\2601590536\Models\High Tech Battery_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2601590536\Models\High Tech Battery_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2601590536\Models\High Tech Battery_BS3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>HighTechBattery</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>60</BuildTimeSeconds>
+
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>22</MaxPowerOutput>
+
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>20</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>7</MaxStoredPower>
+            <InitialStoredPowerRatio>0.1</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.4</RechargeMultiplier>
+
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>15</PCU>
+            <IsAirTight>true</IsAirTight>
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+        </Definition>
+	
+		<Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+            <Id>
+                <TypeId>BatteryBlock</TypeId>
+                <SubtypeId>SL3X3X2AdvancedBattery</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Battery SuperSize</DisplayName>
+            <Icon>..\2601590536\Textures\Icons\3X3X2 high tech battery.dds</Icon>
+            <Description>Description_Battery</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="2"/>
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>..\2601590536\Models\3X3X2 high tech battery.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="240" />
+                <Component Subtype="SepseCoin" Count="3" />
+                <Component Subtype="Construction" Count="120" />
+                <Component Subtype="ZoneChip" Count="10">
+				    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>                
+                <Component Subtype="PowerCell" Count="960">
+                    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Computer" Count="300" />
+                <Component Subtype="Construction" Count="240" />
+                <Component Subtype="SteelPlate" Count="720" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="..\2601590536\Models\3X3X2 high tech battery_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="..\2601590536\Models\3X3X2 high tech battery_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="..\2601590536\Models\3X3X2 high tech battery_BS3.mwm"/>
+            </BuildProgressModels>
+            <BlockPairName>3X3X2HighTechBattery</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>215</BuildTimeSeconds>
+
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>220</MaxPowerOutput>
+
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>60</RequiredPowerInput>
+            <AdaptibleInput>true</AdaptibleInput>
+            <MaxStoredPower>70</MaxStoredPower>
+            <InitialStoredPowerRatio>0.03</InitialStoredPowerRatio>
+            <RechargeMultiplier>0.8</RechargeMultiplier>
+
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>true</IsAirTight>
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+        </Definition>
+	</CubeBlocks>
+</Definitions>
